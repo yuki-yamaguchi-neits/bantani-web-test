@@ -1,0 +1,6 @@
+node_modules/
+.wrangler/
+.dev.vars
+source-package.b64
+source-package.zip
+_source-extract/

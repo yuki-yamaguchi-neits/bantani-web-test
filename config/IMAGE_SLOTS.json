@@ -1,0 +1,14 @@
+{
+  "top-hero": {
+    "target": "public/assets/images/managed/top-hero.webp",
+    "label": "トップ主画像",
+    "maxWidth": 1600,
+    "format": "webp"
+  },
+  "about-main": {
+    "target": "public/assets/images/managed/about-main.webp",
+    "label": "概要サブ画像",
+    "maxWidth": 1600,
+    "format": "webp"
+  }
+}

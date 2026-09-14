@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web担当者くん 動作確認サイト</title>
+  <meta name="description" content="番谷石材店 Web担当者くんの更新・公開・ロールバック動作を確認するためのダミーサイトです。">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">TEST STONE</a>
+    <nav><a href="#about">概要</a><a href="#status">状態</a></nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">WEB TANTOUSHA TEST</p>
+        <h1 data-edit-id="hero-title">石と暮らしを、静かにつなぐ。</h1>
+        <p data-edit-id="hero-lead">これはWeb担当者くんの動作確認専用ダミーサイトです。文章・画像・CSS・JavaScriptの変更を安全に試せます。</p>
+        <button id="testButton" type="button">JavaScript動作確認</button>
+      </div>
+      <figure class="hero-media">
+        <img src="assets/images/managed/top-hero.webp" alt="動作確認用のダミー写真" width="1200" height="800">
+      </figure>
+    </section>
+
+    <section id="about" class="section-grid">
+      <div>
+        <p class="eyebrow">ABOUT</p>
+        <h2 data-edit-id="about-title">変更対象が見つけやすい構造</h2>
+        <p data-edit-id="about-body">文章変更では data-edit-id を目印にできます。画像は固定スロット方式で、HTMLを触らずに差し替える想定です。</p>
+      </div>
+      <img class="sub-image" src="assets/images/managed/about-main.webp" alt="サブ画像" width="1200" height="800">
+    </section>
+
+    <section id="status" class="status-panel">
+      <p class="eyebrow">TEST STATUS</p>
+      <h2>現在のダミー状態</h2>
+      <p id="jsStatus">JavaScriptはまだ操作されていません。</p>
+      <div class="test-card">
+        <strong>変更テスト用の文</strong>
+        <p data-edit-id="test-message">この文章を「更新テスト成功」に変えてください。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>Web担当者くん V1 動作確認専用 / 本番利用禁止</footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
