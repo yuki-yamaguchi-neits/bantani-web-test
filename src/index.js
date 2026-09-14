@@ -9,12 +9,19 @@ function unauthorized() {
   });
 }
 
+function decodeBasicCredentials(value) {
+  const binary = atob(value);
+  const bytes = Uint8Array.from(binary, (character) => character.charCodeAt(0));
+  return new TextDecoder().decode(bytes);
+}
+
 function hasValidCredentials(request, env) {
   const header = request.headers.get('Authorization');
-  if (!header?.startsWith('Basic ')) return false;
+  const match = header?.match(/^Basic\s+(.+)$/i);
+  if (!match) return false;
 
   try {
-    const decoded = atob(header.slice(6));
+    const decoded = decodeBasicCredentials(match[1]);
     const separator = decoded.indexOf(':');
     if (separator < 0) return false;
     const username = decoded.slice(0, separator);
