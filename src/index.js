@@ -9,6 +9,22 @@ function unauthorized() {
   });
 }
 
+function authConfiguration(env) {
+  return {
+    usernameConfigured: Boolean(env.BASIC_AUTH_USERNAME),
+    passwordConfigured: Boolean(env.BASIC_AUTH_PASSWORD)
+  };
+}
+
+function diagnosticResponse(env) {
+  return Response.json(authConfiguration(env), {
+    headers: {
+      'Cache-Control': 'no-store',
+      'X-Robots-Tag': 'noindex, nofollow, noarchive, nosnippet'
+    }
+  });
+}
+
 function decodeBasicCredentials(value) {
   const binary = atob(value);
   const bytes = Uint8Array.from(binary, (character) => character.charCodeAt(0));
@@ -34,6 +50,10 @@ function hasValidCredentials(request, env) {
 
 export default {
   async fetch(request, env) {
+    if (new URL(request.url).pathname === '/_auth-diagnostic') {
+      return diagnosticResponse(env);
+    }
+
     if (!env.BASIC_AUTH_USERNAME || !env.BASIC_AUTH_PASSWORD || !hasValidCredentials(request, env)) {
       return unauthorized();
     }
