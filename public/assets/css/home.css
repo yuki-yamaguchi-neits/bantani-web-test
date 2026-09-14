@@ -1777,7 +1777,7 @@ html, body { margin: 0; }
   position: absolute;
   inset: 0;
   z-index: 0;
-  background-image: url("../images/service-overview-real.webp");
+  background-image: url("/assets/images/service-overview-real.webp");
   background-position: 38% center;
   background-size: cover;
   content: "";

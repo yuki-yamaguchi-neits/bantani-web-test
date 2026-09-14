@@ -209,7 +209,7 @@ body {
     min-height: 520px;
     background:
       linear-gradient(180deg, rgba(42, 34, 26, .06), rgba(42, 34, 26, .3)),
-      url("../../assets/images/works-close-real.webp") 54% center / cover no-repeat;
+      url("/assets/images/works-close-real.webp") 54% center / cover no-repeat;
     content: "";
   }
 
@@ -2736,7 +2736,7 @@ body {
     width: 100%;
     height: 100%;
     min-height: 320px;
-    background: url("../../assets/images/relocation-highres.png") center top / cover no-repeat;
+    background: url("/assets/images/relocation-highres.png") center top / cover no-repeat;
   }
 
   .bantani-repair-close #repair-relocation .rc-relocation__details {
@@ -3739,7 +3739,7 @@ body {
     background-color: #fff;
     background-image:
       linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)),
-      url("../../assets/images/repair/grave-maintenance-hands.png");
+      url("/assets/images/repair/grave-maintenance-hands.png");
     background-position: center, center right;
     background-repeat: no-repeat;
     background-size: cover, cover;

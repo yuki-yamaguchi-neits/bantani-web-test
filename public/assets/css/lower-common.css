@@ -577,52 +577,52 @@ html {
    ========================================================= */
 
 .lower-page--about {
-  --lower-hero-image-pc: url("../images/build-new-real-ai-upscale.webp");
-  --lower-hero-image-mobile: url("../images/build-new-real-ai-upscale.webp");
+  --lower-hero-image-pc: url("/assets/images/build-new-real-ai-upscale.webp");
+  --lower-hero-image-mobile: url("/assets/images/build-new-real-ai-upscale.webp");
   --lower-hero-position-pc: center;
   --lower-hero-position-mobile: center;
 }
 
 .lower-page--build-grave {
-  --lower-hero-image-pc: url("../images/lower-hero/build-grave-pc.webp");
-  --lower-hero-image-mobile: url("../images/lower-hero/build-grave-mobile.webp");
+  --lower-hero-image-pc: url("/assets/images/lower-hero/build-grave-pc.webp");
+  --lower-hero-image-mobile: url("/assets/images/lower-hero/build-grave-mobile.webp");
   --lower-hero-position-pc: center;
   --lower-hero-position-mobile: center;
 }
 
 .lower-page--repair-close {
-  --lower-hero-image-pc: url("../images/lower-hero/repair-close-pc.webp");
-  --lower-hero-image-mobile: url("../images/lower-hero/repair-close-mobile.webp");
+  --lower-hero-image-pc: url("/assets/images/lower-hero/repair-close-pc.webp");
+  --lower-hero-image-mobile: url("/assets/images/lower-hero/repair-close-mobile.webp");
   --lower-hero-position-pc: center;
   --lower-hero-position-mobile: center;
 }
 
 .lower-page--works {
-  --lower-hero-image-pc: url("../images/lower-hero/works-pc.webp");
-  --lower-hero-image-mobile: url("../images/lower-hero/works-mobile.webp");
+  --lower-hero-image-pc: url("/assets/images/lower-hero/works-pc.webp");
+  --lower-hero-image-mobile: url("/assets/images/lower-hero/works-mobile.webp");
   --lower-hero-position-pc: center;
   --lower-hero-position-mobile: center;
   --lower-hero-wash-pc: linear-gradient(90deg, rgba(17, 14, 11, 0.7) 0%, rgba(31, 26, 20, 0.46) 37%, rgba(31, 26, 20, 0.17) 66%, rgba(11, 9, 8, 0.32) 100%);
 }
 
 .lower-page--knowledge {
-  --lower-hero-image-pc: url("../images/lower-hero/knowledge-pc.webp");
-  --lower-hero-image-mobile: url("../images/lower-hero/knowledge-mobile.webp");
+  --lower-hero-image-pc: url("/assets/images/lower-hero/knowledge-pc.webp");
+  --lower-hero-image-mobile: url("/assets/images/lower-hero/knowledge-mobile.webp");
   --lower-hero-position-pc: center;
   --lower-hero-position-mobile: center;
 }
 
 .lower-page--contact {
-  --lower-hero-image-pc: url("../images/lower-hero/contact-pc.webp");
-  --lower-hero-image-mobile: url("../images/lower-hero/contact-mobile.webp");
+  --lower-hero-image-pc: url("/assets/images/lower-hero/contact-pc.webp");
+  --lower-hero-image-mobile: url("/assets/images/lower-hero/contact-mobile.webp");
   --lower-hero-position-pc: center;
   --lower-hero-position-mobile: center;
   --lower-hero-wash-pc: linear-gradient(90deg, rgba(13, 11, 9, 0.74) 0%, rgba(25, 21, 17, 0.5) 40%, rgba(25, 21, 17, 0.22) 68%, rgba(10, 8, 7, 0.38) 100%);
 }
 
 .lower-page--privacy-policy {
-  --lower-hero-image-pc: url("../images/lower-hero/privacy-policy-pc.webp");
-  --lower-hero-image-mobile: url("../images/lower-hero/privacy-policy-mobile.webp");
+  --lower-hero-image-pc: url("/assets/images/lower-hero/privacy-policy-pc.webp");
+  --lower-hero-image-mobile: url("/assets/images/lower-hero/privacy-policy-mobile.webp");
   --lower-hero-position-pc: center;
   --lower-hero-position-mobile: center;
 }
