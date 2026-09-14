@@ -55,11 +55,15 @@
   }
 
   const slideshow = document.querySelector('[data-build-slideshow]');
-  if (slideshow && window.matchMedia('(min-width: 821px)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (slideshow && !reduceMotion) {
     const slides = [...slideshow.querySelectorAll('.works-build-slide')];
     const label = slideshow.querySelector('h3[data-build-label]');
     const caption = slideshow.querySelector('p[data-build-caption]');
     const rail = slideshow.querySelector('.works-build-slideshow__rail');
+
+    if (slides.length < 2 || !label || !caption || !rail) return;
+
     let activeIndex = 0;
     let timer;
     const moveDuration = 1200;
@@ -73,10 +77,12 @@
       slides[activeIndex].classList.add('is-active');
       label.textContent = slides[activeIndex].dataset.buildLabel;
       caption.textContent = slides[activeIndex].dataset.buildCaption;
-      rail.animate(
-        [{ opacity: .35, transform: 'translateY(5px)' }, { opacity: 1, transform: 'translateY(0)' }],
-        { duration: 650, easing: 'ease-out' }
-      );
+      if (typeof rail.animate === 'function') {
+        rail.animate(
+          [{ opacity: .35, transform: 'translateY(5px)' }, { opacity: 1, transform: 'translateY(0)' }],
+          { duration: 650, easing: 'ease-out' }
+        );
+      }
       window.setTimeout(() => {
         currentSlide.classList.remove('is-leaving');
         currentSlide.classList.add('is-resetting');
