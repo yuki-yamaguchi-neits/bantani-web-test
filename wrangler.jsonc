@@ -4,6 +4,12 @@
   "main": "src/index.js",
   "compatibility_date": "2026-09-14",
   "workers_dev": true,
+  "secrets": {
+    "required": [
+      "BASIC_AUTH_USERNAME",
+      "BASIC_AUTH_PASSWORD"
+    ]
+  },
   "assets": {
     "directory": "./public",
     "binding": "ASSETS",
