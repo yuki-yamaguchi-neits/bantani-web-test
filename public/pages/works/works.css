@@ -526,8 +526,18 @@
 
   .lower-page--works .works-build-slideshow { display: block; }
   .lower-page--works .works-build-slideshow__viewport { position: relative; aspect-ratio: 4 / 3; overflow: hidden; }
-  .lower-page--works .works-build-slide { position: absolute; inset: 0; margin: 0; opacity: 0; }
-  .lower-page--works .works-build-slide.is-active { opacity: 1; }
+  .lower-page--works .works-build-slide {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 1200ms ease-in-out;
+    pointer-events: none;
+  }
+  .lower-page--works .works-build-slide.is-active { z-index: 1; opacity: 1; }
+  .lower-page--works .works-build-slide.is-leaving { z-index: 2; opacity: 0; }
+  .lower-page--works .works-build-slide.is-resetting { z-index: 0; opacity: 0; transition: none; }
   .lower-page--works .works-build-slide img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
   .lower-page--works .works-build-slide figcaption { display: none; }
   .lower-page--works .works-build-slideshow__rail { margin-top: 14px; padding-left: 14px; border-left: 1px solid #826b4b; }
