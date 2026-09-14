@@ -1,0 +1,382 @@
+.bantani-privacy {
+  --pp-ink: #29241e;
+  --pp-text: #473f35;
+  --pp-muted: #6f6558;
+  --pp-accent: #9d845a;
+  --pp-accent-deep: #775f3f;
+  --pp-line: rgba(128, 104, 72, 0.24);
+  --pp-line-soft: rgba(128, 104, 72, 0.12);
+  --pp-white: #fffdfa;
+  --pp-ivory: #f8f4ed;
+  --pp-stone: #f1ece4;
+  --pp-warm: #f5efe7;
+  --pp-max: 76rem;
+  --pp-gutter: clamp(1.125rem, 4vw, 2.75rem);
+  color: var(--pp-text);
+  background: #fdfbf7;
+  font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 1rem;
+  line-height: 1.95;
+  letter-spacing: 0.02em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.bantani-privacy *,
+.bantani-privacy *::before,
+.bantani-privacy *::after {
+  box-sizing: border-box;
+}
+
+.bantani-privacy a {
+  color: inherit;
+}
+
+.bantani-privacy p,
+.bantani-privacy ul {
+  margin-top: 0;
+}
+
+.bantani-privacy .pp-container {
+  width: min(var(--pp-max), calc(100% - (var(--pp-gutter) * 2)));
+  margin-inline: auto;
+}
+
+@media (min-width: 761px) {
+  .bantani-privacy {
+    background: #fdfbf7;
+    color: #51483d;
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  .bantani-privacy .pp-container {
+    width: min(880px, calc(100% - 80px));
+  }
+
+  .bantani-privacy .pp-section {
+    padding: 80px 0 100px;
+  }
+
+  .bantani-privacy .pp-section--white {
+    background: transparent;
+  }
+
+  .bantani-privacy .pp-section__content,
+  .bantani-privacy .pp-prose {
+    max-width: none;
+  }
+
+  .bantani-privacy .pp-policy-card {
+    display: block;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  .bantani-privacy .pp-block {
+    padding: 0 0 32px;
+    border-bottom: 1px solid rgba(130, 107, 75, .24);
+  }
+
+  .bantani-privacy .pp-block + .pp-block {
+    padding-top: 32px;
+  }
+
+  .bantani-privacy .pp-block:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .bantani-privacy .pp-block h2 {
+    margin: 0 0 20px;
+    color: #2a241d;
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .04em;
+  }
+
+  .bantani-privacy .pp-prose p {
+    margin: 0 0 16px;
+  }
+
+  .bantani-privacy .pp-list,
+  .bantani-privacy .pp-contact-list {
+    gap: 8px;
+    margin: 20px 0 0;
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  .bantani-privacy .pp-list {
+    padding-left: 1.25em;
+  }
+
+  .bantani-privacy .pp-contact-list {
+    display: grid;
+    padding: 0;
+  }
+
+  .bantani-privacy .pp-contact-list p {
+    margin: 0;
+  }
+
+  .bantani-privacy .pp-contact-list a {
+    text-decoration: none;
+  }
+
+  .bantani-privacy .pp-contact-list p:nth-child(3) a,
+  .bantani-privacy .pp-contact-list p:nth-child(4) a {
+    border-bottom: 1px solid rgba(130, 107, 75, .45);
+  }
+}
+
+.bantani-privacy .pp-section {
+  scroll-margin-top: 7rem;
+  padding-block: 4.75rem;
+}
+
+.bantani-privacy .pp-section--white {
+  background: var(--pp-white);
+}
+
+.bantani-privacy .pp-section--contact {
+  background: #fffcf7;
+  border-top: 1px solid rgba(83, 69, 51, .09);
+  padding-block: 4rem 4.25rem;
+}
+
+.bantani-privacy .pp-section__layout {
+  display: grid;
+  grid-template-columns: 5rem minmax(0, 1fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+}
+
+.bantani-privacy .pp-section__number {
+  position: relative;
+  align-self: stretch;
+  margin: 0;
+  padding-right: 1rem;
+  color: var(--pp-accent);
+  font-size: clamp(2.2rem, 3vw, 2.8rem);
+  line-height: 1;
+  text-align: center;
+}
+
+.bantani-privacy .pp-section__number::after {
+  position: absolute;
+  top: 3.3rem;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--pp-line);
+  content: "";
+}
+
+.bantani-privacy .pp-section__content {
+  min-width: 0;
+}
+
+.bantani-privacy .pp-section--contact .pp-section__layout {
+  display: block;
+  width: min(100% - 5rem, 62rem);
+}
+
+.bantani-privacy .pp-section--contact .pp-section__content {
+  max-width: 48rem;
+}
+
+.bantani-privacy .pp-section--contact h2 {
+  margin: 0 0 1rem;
+  color: var(--pp-ink);
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: clamp(30px, 3vw, 38px);
+  font-weight: 500;
+  line-height: 1.55;
+  letter-spacing: 0.04em;
+}
+
+.bantani-privacy .pp-prose {
+  max-width: 50rem;
+}
+
+.bantani-privacy .pp-prose p:last-child {
+  margin-bottom: 0;
+}
+
+.bantani-privacy .pp-policy-card {
+  display: grid;
+  gap: 1.75rem;
+  padding: 1.75rem;
+  border: 1px solid var(--pp-line-soft);
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.bantani-privacy .pp-block {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--pp-line-soft);
+}
+
+.bantani-privacy .pp-block:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.bantani-privacy .pp-block h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.45rem, 2.5vw, 1.8rem);
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.bantani-privacy .pp-list,
+.bantani-privacy .pp-contact-list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.bantani-privacy .pp-contact-list a {
+  text-decoration: none;
+}
+
+/* The contact details are no longer a list, so they should not inherit list indentation on mobile. */
+.bantani-privacy .pp-contact-list {
+  padding-left: 0;
+}
+
+.bantani-privacy .pp-section__lead {
+  max-width: 46rem;
+  margin-bottom: 1.5rem;
+  color: var(--pp-ink);
+  font-size: 1.0625rem;
+  line-height: 1.85;
+}
+
+.bantani-privacy .pp-contact-panel {
+  margin-top: 1.25rem;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.bantani-privacy .pp-btn.site-cta {
+  min-width: 240px;
+}
+
+@media (max-width: 760px) {
+.bantani-privacy .pp-section__layout {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .bantani-privacy .pp-section--contact {
+    padding-block: 3rem 3.25rem;
+  }
+
+  .bantani-privacy .pp-section--contact .pp-section__layout {
+    width: min(100% - 2.5rem, 36rem);
+  }
+
+  .bantani-privacy .pp-btn.site-cta {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .bantani-privacy .pp-section__number {
+    text-align: left;
+    padding-right: 0;
+    font-size: 2rem;
+  }
+
+  .bantani-privacy .pp-section__number::after {
+    display: none;
+  }
+
+  .bantani-privacy .pp-contact-list p:nth-child(3) a {
+    display: block;
+    width: fit-content;
+  }
+}
+@media (max-width: 390px) {
+.bantani-privacy .pp-policy-card,
+  .bantani-privacy .pp-contact-panel {
+    padding: 1.2rem 1rem;
+  }
+}
+
+/* Desktop-only policy layout. Kept last so the legacy page rules stay intact on mobile. */
+@media (min-width: 761px) {
+  .bantani-privacy #privacy-policy.pp-section {
+    padding: 80px 0 100px;
+    background: transparent;
+  }
+
+  .bantani-privacy #privacy-policy .pp-block {
+    padding: 0 0 32px;
+    border-bottom: 1px solid rgba(130, 107, 75, .24);
+  }
+
+  .bantani-privacy #privacy-policy .pp-block + .pp-block {
+    padding-top: 32px;
+  }
+
+  .bantani-privacy #privacy-policy .pp-block:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .bantani-privacy #privacy-policy .pp-block h2 {
+    margin: 0 0 20px;
+    color: #2a241d;
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .04em;
+  }
+
+  .bantani-privacy #privacy-policy .pp-prose p {
+    margin: 0 0 16px;
+  }
+
+  .bantani-privacy #privacy-policy .pp-prose p:last-child {
+    margin-bottom: 0;
+  }
+
+  .bantani-privacy #privacy-policy .pp-list,
+  .bantani-privacy #privacy-policy .pp-contact-list {
+    gap: 8px;
+    margin: 20px 0 0;
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  .bantani-privacy #privacy-policy .pp-list {
+    padding-left: 1.25em;
+  }
+
+  .bantani-privacy #privacy-policy .pp-contact-list {
+    display: grid;
+    padding: 0;
+  }
+
+  .bantani-privacy #privacy-policy .pp-contact-list p {
+    margin: 0;
+  }
+
+  .bantani-privacy #privacy-policy .pp-contact-list a {
+    text-decoration: none;
+  }
+
+  .bantani-privacy #privacy-policy .pp-contact-list p:nth-child(3) a,
+  .bantani-privacy #privacy-policy .pp-contact-list p:nth-child(4) a {
+    border-bottom: 1px solid rgba(130, 107, 75, .45);
+  }
+}

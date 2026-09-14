@@ -1,0 +1,44 @@
+Options -MultiViews
+DirectoryIndex index.html
+
+RewriteEngine On
+
+# Canonical scheme and host.
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} !^bantani\.jp$ [NC]
+RewriteRule ^ https://bantani.jp%{REQUEST_URI} [R=301,L]
+
+# Do not expose physical entry-point filenames or the source pages/ directory.
+RewriteCond %{THE_REQUEST} \s/+index\.html(?:[?\s]) [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+pages/(about|build-grave|repair-close|works|knowledge|contact|privacy-policy)(?:/index\.html)?(?:[?\s]) [NC]
+RewriteRule ^pages/(about|build-grave|repair-close|works|knowledge|contact|privacy-policy)(?:/index\.html)?$ /$1/ [R=301,L]
+RewriteCond %{THE_REQUEST} \s/(about|build-grave|repair-close|works|knowledge|contact|privacy-policy)/index\.html(?:[?\s]) [NC]
+RewriteRule ^(about|build-grave|repair-close|works|knowledge|contact|privacy-policy)/index\.html$ /$1/ [R=301,L]
+
+# Directory URL is the public form; serve the existing physical files internally.
+RewriteRule ^(about|build-grave|repair-close|works|knowledge|contact|privacy-policy)$ /$1/ [R=301,L]
+RewriteRule ^(about|build-grave|repair-close|works|knowledge|contact|privacy-policy)/$ pages/$1/index.html [L]
+
+ErrorDocument 404 /404.html
+
+<IfModule mod_headers.c>
+  # Enable only after HTTPS is verified in production. Do not add includeSubDomains or preload initially.
+  # Header always set Strict-Transport-Security "max-age=31536000" env=HTTPS
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "geolocation=(), camera=(), microphone=(), payment=(), usb=()"
+
+  # Report-only until the production server and Google Maps/GA4 are verified.
+  Header always set Content-Security-Policy-Report-Only "default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src https://www.google.com; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests"
+
+  <FilesMatch "\.(?:html?)$">
+    Header always set Cache-Control "no-cache, max-age=0, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "\.(?:css|js|svg)$">
+    Header always set Cache-Control "public, max-age=86400"
+  </FilesMatch>
+  <FilesMatch "\.(?:avif|gif|ico|jpe?g|png|webp)$">
+    Header always set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+</IfModule>

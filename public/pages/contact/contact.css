@@ -1,0 +1,116 @@
+/* Contact page: desktop-first, with the same layout flowing into one column. */
+.bantani-contact {
+  --ct-ink:#29241e; --ct-text:#473f35; --ct-muted:#6f6558; --ct-accent-deep:#775f3f;
+  --ct-line:rgba(105,84,58,.2); --ct-white:#fffdfa; --ct-ivory:#faf7f0; --ct-warm:#faf7f1;
+  --ct-max:73.75rem; --ct-gutter:clamp(1.125rem,4vw,2.75rem);
+  color:var(--ct-text); background:var(--ct-white); font-family:"TBUDゴシック R","Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif;
+  font-size:1.0625rem; line-height:1.92; letter-spacing:.025em; text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased;
+}
+.bantani-contact *, .bantani-contact *::before, .bantani-contact *::after { box-sizing:border-box; }
+.bantani-contact.typesquare_option, .bantani-contact .typesquare_option { opacity:1 !important; }
+.bantani-contact a { color:inherit; }
+.bantani-contact p, .bantani-contact ul, .bantani-contact dl { margin-top:0; }
+.bantani-contact .ct-container { width:min(var(--ct-max),calc(100% - (var(--ct-gutter) * 2))); margin-inline:auto; }
+.bantani-contact .ct-chapter { scroll-margin-top:7rem; padding-block:clamp(4.5rem,9vw,6.75rem); }
+.bantani-contact .ct-chapter--white { background:var(--ct-white); }
+.bantani-contact .ct-chapter--ivory { background:var(--ct-ivory); }
+.bantani-contact .ct-chapter--contact { background:var(--ct-warm); }
+.bantani-contact .ct-chapter__content { min-width:0; }
+.bantani-contact .ct-chapter__content > h2 {
+  margin:0 0 2rem; color:var(--ct-ink); font-family:"Yu Mincho","Hiragino Mincho ProN",serif;
+  font-size:clamp(2.1rem,3vw,2.7rem); font-weight:500; line-height:1.48; letter-spacing:.08em;
+}
+.bantani-contact .ct-chapter__content > h2::after { display:block; width:3rem; height:1px; margin-top:1.45rem; background:rgba(130,107,75,.46); content:""; }
+.bantani-contact .ct-chapter__lead {
+  max-width:52rem; margin-bottom:1.35rem; color:var(--ct-accent-deep); font-family:"Yu Mincho","Hiragino Mincho ProN",serif;
+  font-size:clamp(1.1rem,1.5vw,1.3rem); line-height:1.8; letter-spacing:.06em;
+}
+.bantani-contact .ct-prose { max-width:48rem; }
+.bantani-contact .ct-prose p { margin-bottom:1.2rem; }
+.bantani-contact .ct-mail-address { display:inline; max-width:100%; word-break:normal; overflow-wrap:normal; }
+
+.bantani-contact .ct-consult-list {
+  display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0; margin:3rem 0 0; padding:0;
+  border-top:1px solid var(--ct-line); border-bottom:1px solid var(--ct-line); list-style:none;
+}
+.bantani-contact .ct-consult-list li { min-width:0; padding:1.15rem 1.35rem 1.1rem; border-bottom:1px solid rgba(105,84,58,.15); background:transparent; font-size:.98rem; }
+.bantani-contact .ct-consult-list li:nth-child(even) { border-left:1px solid rgba(105,84,58,.15); }
+.bantani-contact .ct-consult-list li:nth-last-child(-n + 2) { border-bottom:0; }
+
+.bantani-contact .ct-method-grid, .bantani-contact .ct-access-grid { display:grid; gap:0; border-top:1px solid var(--ct-line); border-bottom:1px solid var(--ct-line); }
+.bantani-contact .ct-method-grid { grid-template-columns:repeat(2,minmax(0,1fr)); margin-top:3.1rem; }
+.bantani-contact .ct-method-card { min-width:0; padding:2.25rem 2.6rem 2.35rem; background:transparent; }
+.bantani-contact .ct-method-card + .ct-method-card { border-left:1px solid var(--ct-line); }
+.bantani-contact .ct-method-card h3 {
+  display:flex; gap:.7rem; align-items:center; margin:0 0 1.45rem; color:var(--ct-ink); font-family:"Yu Mincho","Hiragino Mincho ProN",serif;
+  font-size:1.65rem; font-weight:500; line-height:1.55; letter-spacing:.04em;
+}
+.bantani-contact .ct-method-icon { display:inline-flex; width:1.25rem; flex:0 0 1.25rem; color:var(--ct-accent-deep); }
+.bantani-contact .ct-method-icon svg { width:100%; height:auto; }
+.bantani-contact .ct-method-card__details, .bantani-contact .ct-access-details { margin:0; }
+.bantani-contact .ct-method-card__details div, .bantani-contact .ct-access-details div {
+  display:grid; grid-template-columns:6.25rem minmax(0,1fr); gap:1rem; padding-block:.85rem; border-top:1px solid rgba(105,84,58,.14);
+}
+.bantani-contact .ct-method-card__details div:first-child, .bantani-contact .ct-access-details div:first-child { padding-top:0; border-top:0; }
+.bantani-contact .ct-method-card__details dt, .bantani-contact .ct-access-details dt { color:var(--ct-muted); font-size:.9rem; }
+.bantani-contact .ct-method-card--mail .ct-method-card__details div { grid-template-columns:7rem minmax(0,1fr); }
+.bantani-contact .ct-method-card--mail .ct-method-card__details dt { white-space:nowrap; }
+.bantani-contact .ct-method-card__details dd, .bantani-contact .ct-access-details dd { min-width:0; margin:0; color:var(--ct-ink); }
+.bantani-contact .ct-method-card__details a, .bantani-contact .ct-access-details a { text-decoration-thickness:1px; text-underline-offset:.12em; }
+.bantani-contact .ct-method-card__details a[href^="tel"], .bantani-contact .ct-access-details a[href^="tel"] {
+  color:var(--ct-accent-deep); font-family:"Yu Mincho","Hiragino Mincho ProN",serif; font-size:1.85rem; letter-spacing:.06em; text-decoration:none;
+}
+.bantani-contact .ct-method-card__note { max-width:29rem; margin-top:1.5rem; color:var(--ct-muted); font-size:.88rem; line-height:1.8; }
+.bantani-contact .ct-method-card--mail .ct-mail-address { white-space:nowrap; }
+
+.bantani-contact #contact-policy .ct-chapter__content { max-width:52rem; }
+.bantani-contact #contact-policy .ct-prose { max-width:44rem; }
+.bantani-contact #contact-access .ct-chapter__content > h2 { font-size:clamp(2rem,2.7vw,2.15rem); }
+.bantani-contact #contact-access .ct-chapter__lead { margin-bottom:2.25rem; font-size:1.1rem; }
+.bantani-contact .ct-access-grid { grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr); }
+.bantani-contact .ct-access-panel { min-width:0; padding:2.15rem 2.25rem 2.3rem; background:transparent; }
+.bantani-contact .ct-access-panel + .ct-access-panel { border-left:1px solid var(--ct-line); }
+.bantani-contact .ct-access-details div:first-child dd { font-size:.96rem; letter-spacing:0; }
+.bantani-contact .ct-map-frame { overflow:hidden; border:1px solid var(--ct-line); }
+.bantani-contact .ct-map-frame iframe { display:block; width:100%; height:21rem; border:0; }
+.bantani-contact .ct-map-link { display:inline-flex; gap:.9rem; align-items:center; margin-top:1rem; color:var(--ct-accent-deep); font-size:.94rem; text-decoration-thickness:1px; text-underline-offset:.22em; }
+.bantani-contact .ct-privacy-note { max-width:43rem; margin-top:4.5rem; padding-top:2rem; border-top:1px solid var(--ct-line); }
+.bantani-contact .ct-privacy-note h3 { margin:0 0 1rem; color:var(--ct-ink); font-family:"Yu Mincho","Hiragino Mincho ProN",serif; font-size:1.28rem; font-weight:500; letter-spacing:.06em; }
+.bantani-contact .ct-privacy-note .ct-prose { max-width:none; font-size:.95rem; }
+.bantani-contact .ct-privacy-link { margin-top:1.75rem; }
+
+@media (max-width:47.5rem) {
+  .bantani-contact .ct-chapter { padding-block:3.5rem; }
+
+  .bantani-contact .ct-chapter__content > h2,
+  .bantani-contact #contact-access .ct-chapter__content > h2 {
+    margin-bottom:1.45rem;
+    font-size:1.5rem;
+    line-height:1.55;
+    letter-spacing:.055em;
+  }
+
+  .bantani-contact .ct-chapter__lead,
+  .bantani-contact #contact-access .ct-chapter__lead {
+    margin-bottom:1.1rem;
+    font-size:1rem;
+  }
+
+  .bantani-contact .ct-method-card h3 { font-size:1.2rem; }
+  .bantani-contact .ct-method-icon { width:1.05rem; flex-basis:1.05rem; }
+
+  .bantani-contact .ct-method-card__details a[href^="tel"],
+  .bantani-contact .ct-access-details a[href^="tel"] { font-size:1.3rem; }
+
+  .bantani-contact .ct-method-card--mail .ct-method-card__details div { display:block; }
+  .bantani-contact .ct-method-card--mail .ct-method-card__details dt { margin-bottom:.25rem; white-space:nowrap; }
+  .bantani-contact .ct-method-card--mail .ct-mail-address { display:inline-block; font-size:.95rem; white-space:nowrap; }
+
+  .bantani-contact .ct-consult-list, .bantani-contact .ct-method-grid, .bantani-contact .ct-access-grid { grid-template-columns:1fr; }
+  .bantani-contact .ct-consult-list li:nth-child(even), .bantani-contact .ct-method-card + .ct-method-card, .bantani-contact .ct-access-panel + .ct-access-panel { border-left:0; }
+  .bantani-contact .ct-consult-list li:nth-last-child(-n + 2) { border-bottom:1px solid rgba(105,84,58,.15); }
+  .bantani-contact .ct-consult-list li:last-child { border-bottom:0; }
+  .bantani-contact .ct-method-card + .ct-method-card, .bantani-contact .ct-access-panel + .ct-access-panel { border-top:1px solid var(--ct-line); }
+  .bantani-contact .ct-method-card, .bantani-contact .ct-access-panel { padding:1.75rem 1.35rem; }
+  .bantani-contact .ct-map-frame iframe { height:18rem; }
+}

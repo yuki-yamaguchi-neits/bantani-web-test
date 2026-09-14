@@ -1,0 +1,3824 @@
+html,
+body {
+  margin: 0;
+}
+
+@media (min-width: 901px) {
+  .bantani-repair-close #repair-concerns .rc-split-heading h2,
+  .bantani-repair-close #repair-reform .rc-split-heading h2,
+  .bantani-repair-close #repair-small .rc-maintenance-heading h2,
+  .bantani-repair-close #repair-relocation .rc-relocation-heading h2,
+  .bantani-repair-close #repair-closeout .rc-closeout__copy h2 {
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.48;
+    letter-spacing: .07em;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-heading,
+  .bantani-repair-close #repair-relocation .rc-relocation-heading {
+    display: block;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-heading h2,
+  .bantani-repair-close #repair-relocation .rc-relocation-heading h2 {
+    margin: 0;
+  }
+
+  .bantani-repair-close .rc-section-context {
+    display: grid;
+    grid-template-columns: minmax(280px, .68fr) minmax(0, 1.32fr);
+    gap: clamp(42px, 6vw, 90px);
+    align-items: start;
+    margin-top: 30px;
+    padding: 24px 30px 26px;
+    border: 1px solid rgba(135, 108, 70, .18);
+    background: rgba(255, 255, 255, .28);
+  }
+
+  .bantani-repair-close .rc-section-context .rc-section-lead {
+    margin: 0;
+    color: #9b7440;
+    font-size: 19px;
+    line-height: 1.72;
+  }
+
+  .bantani-repair-close .rc-section-context > div {
+    display: grid;
+    gap: 10px;
+  }
+
+  .bantani-repair-close .rc-section-context p:not(.rc-section-lead) {
+    margin: 0;
+    color: var(--rc-muted);
+    font-size: 14px;
+    line-height: 1.9;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-layout {
+    margin-top: 54px;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-relocation-layout {
+    margin-top: 58px;
+  }
+
+  .bantani-repair-close #repair-closeout {
+    padding-block: 112px 118px;
+    background: #4b4238;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-chapter__content {
+    width: min(100%, 1180px);
+    margin-inline: auto;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout {
+    grid-template-columns: minmax(360px, .82fr) minmax(0, 1.18fr);
+    gap: clamp(78px, 9vw, 150px);
+    align-items: start;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__copy {
+    gap: 18px;
+    padding-top: 0;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__copy h2 {
+    margin: 0 0 4px;
+    color: #fff8ef;
+    font-size: clamp(34px, 2.65vw, 42px);
+    font-weight: 400;
+    line-height: 1.35;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__copy .rc-section-lead {
+    color: #dfcfb2;
+    font-size: 20px;
+    line-height: 1.72;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__copy > p:not(.rc-section-kicker):not(.rc-section-lead) {
+    color: rgba(255, 249, 240, .8);
+    font-size: 14px;
+    line-height: 1.95;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__points {
+    gap: 0;
+    margin-top: 16px;
+    border-top: 1px solid rgba(223, 207, 178, .32);
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__points li {
+    padding: 15px 0 15px 18px;
+    border-bottom: 1px solid rgba(223, 207, 178, .2);
+    color: rgba(255, 249, 240, .84);
+    font-size: 13px;
+    line-height: 1.72;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__points li::before {
+    top: 1.1em;
+    width: 6px;
+    height: 6px;
+    border-radius: 0;
+    background: #c39a61;
+    transform: rotate(45deg);
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__photos {
+    gap: 22px;
+    padding-top: 78px;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__pair {
+    grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr);
+    gap: 18px;
+    align-items: end;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__pair figure {
+    gap: 10px;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__pair figure:first-child {
+    padding-bottom: 34px;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__pair img {
+    aspect-ratio: 4 / 3;
+    border: 0;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__pair figure:last-child img {
+    aspect-ratio: 5 / 4;
+  }
+
+  .bantani-repair-close #repair-relocation {
+    padding-block: 104px 108px;
+    background: #f4eee3;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-chapter__content {
+    width: min(100%, 1180px);
+    margin-inline: auto;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-split-heading {
+    grid-template-columns: minmax(390px, .86fr) minmax(0, 1.14fr);
+    gap: clamp(72px, 9vw, 144px);
+    padding-bottom: 38px;
+    border-bottom: 1px solid rgba(135, 108, 70, .22);
+  }
+
+  .bantani-repair-close #repair-relocation .rc-split-heading h2 {
+    max-width: 450px;
+    margin-bottom: 0;
+    font-size: clamp(32px, 2.5vw, 39px);
+    line-height: 1.38;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-split-heading > div:last-child {
+    display: grid;
+    gap: 14px;
+    max-width: 580px;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-section-lead {
+    color: #9b7440;
+    font-size: 19px;
+    line-height: 1.7;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-split-heading > div:last-child > p:not(.rc-section-lead) {
+    color: var(--rc-muted);
+    font-size: 14px;
+    line-height: 1.9;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-relocation-layout {
+    display: grid;
+    grid-template-columns: minmax(340px, .78fr) minmax(0, 1.22fr);
+    gap: clamp(58px, 8vw, 120px);
+    margin-top: 58px;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-relocation-layout::before {
+    min-height: 520px;
+    background:
+      linear-gradient(180deg, rgba(42, 34, 26, .06), rgba(42, 34, 26, .3)),
+      url("../../assets/images/works-close-real.webp") 54% center / cover no-repeat;
+    content: "";
+  }
+
+  .bantani-repair-close #repair-relocation .rc-relocation__details {
+    min-width: 0;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-flow-panel {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: clamp(42px, 6vw, 82px);
+    row-gap: 0;
+    margin-top: 0;
+    border-top: 1px solid rgba(135, 108, 70, .22);
+  }
+
+  .bantani-repair-close #repair-relocation .rc-flow-panel article {
+    display: grid;
+    align-content: start;
+    gap: 10px;
+    min-height: 150px;
+    padding: 27px 0 28px;
+    border-bottom: 1px solid var(--rc-line);
+  }
+
+  .bantani-repair-close #repair-relocation .rc-flow-panel h3 {
+    margin: 0;
+    color: var(--rc-ink);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.48;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-flow-panel p {
+    margin: 0;
+    color: var(--rc-muted);
+    font-size: 13.5px;
+    line-height: 1.8;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-note-panel {
+    max-width: none;
+    margin-top: 34px;
+    padding: 18px 0 0 22px;
+    border-left-color: rgba(169, 138, 91, .7);
+  }
+
+  .bantani-repair-close #repair-relocation .rc-note-panel p {
+    margin: 0;
+    color: var(--rc-muted);
+    font-size: 13px;
+    line-height: 1.85;
+  }
+
+  .bantani-repair-close #repair-small {
+    padding-block: 78px 84px;
+  }
+
+  .bantani-repair-close #repair-small .rc-chapter__content {
+    width: min(100%, 1180px);
+    margin-inline: auto;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-heading {
+    grid-template-columns: minmax(340px, .82fr) minmax(0, 1.18fr);
+    gap: clamp(72px, 9vw, 150px);
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(135, 108, 70, .22);
+    text-align: left;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-heading h2 {
+    max-width: 450px;
+    margin-bottom: 0;
+    font-size: clamp(30px, 2.35vw, 36px);
+    line-height: 1.42;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-heading > div:last-child {
+    gap: 14px;
+    max-width: 620px;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-heading .rc-section-lead {
+    color: #9b7440;
+    font-size: 19px;
+    line-height: 1.7;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-heading p:not(.rc-section-lead) {
+    color: var(--rc-muted);
+    font-size: 14px;
+    line-height: 1.9;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-layout {
+    grid-template-columns: minmax(0, 1.24fr) minmax(320px, .76fr);
+    gap: clamp(52px, 7vw, 98px);
+    margin-top: 46px;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: clamp(34px, 5vw, 66px);
+    row-gap: 0;
+    border-top: 1px solid rgba(135, 108, 70, .22);
+  }
+
+  .bantani-repair-close #repair-small .rc-mini-card {
+    display: grid;
+    align-content: start;
+    gap: 10px;
+    min-height: 0;
+    padding: 22px 0 24px;
+    border-bottom: 1px solid var(--rc-line);
+  }
+
+  .bantani-repair-close #repair-small .rc-mini-card h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.45;
+  }
+
+  .bantani-repair-close #repair-small .rc-mini-card p {
+    margin: 0;
+    color: var(--rc-muted);
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .bantani-repair-close #repair-small .rc-side-example {
+    align-self: start;
+    gap: 20px;
+    min-height: 0;
+    padding: 30px 30px 28px;
+    border-radius: 0;
+    box-shadow: none;
+    background: #51463a;
+  }
+
+  .bantani-repair-close #repair-small .rc-side-example h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .bantani-repair-close #repair-small .rc-side-example__pair {
+    gap: 12px;
+  }
+
+  .bantani-repair-close #repair-small .rc-side-example__pair img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .bantani-repair-close #repair-small .rc-side-example > p:last-child {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+}
+
+.bantani-repair-close {
+  --rc-ink: #28231e;
+  --rc-text: #51493f;
+  --rc-muted: #776d60;
+  --rc-gold: #a98a5b;
+  --rc-gold-light: #c9ad80;
+  --rc-deep: #4c443b;
+  --rc-paper: #fdfbf7;
+  --rc-ivory: #f7f1e7;
+  --rc-stone: #ece8e1;
+  --rc-dark: #544b41;
+  --rc-dark-2: #433b33;
+  --rc-line: rgba(91, 75, 57, 0.18);
+  --rc-line-strong: rgba(91, 75, 57, 0.28);
+  color: var(--rc-text);
+  background: var(--rc-paper);
+  font-family: "TBUDゴシック R", "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  overflow: clip;
+}
+
+.bantani-repair-close *,
+.bantani-repair-close *::before,
+.bantani-repair-close *::after {
+  box-sizing: border-box;
+}
+
+.bantani-repair-close.typesquare_option,
+.bantani-repair-close .typesquare_option {
+  opacity: 1 !important;
+}
+
+.bantani-repair-close img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bantani-repair-close a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.bantani-repair-close p,
+.bantani-repair-close figure,
+.bantani-repair-close ul,
+.bantani-repair-close ol {
+  margin: 0;
+}
+
+.bantani-repair-close .rc-container {
+  width: min(1240px, calc(100% - 80px));
+  margin-inline: auto;
+}
+
+.bantani-repair-close .rc-section-kicker--light {
+  color: #dfcfb2;
+}
+
+.bantani-repair-close .rc-section-kicker {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: .8125rem;
+  margin: 0 0 1.25rem;
+  color: #826b4b;
+  font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: .75rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: .24em;
+}
+
+.bantani-repair-close .rc-section-kicker::before {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 8px;
+  background: #b6a17f;
+  content: "";
+}
+
+.bantani-repair-close .rc-section-kicker::after {
+  width: 42px;
+  height: 1px;
+  flex: 0 0 42px;
+  background: rgba(92, 75, 55, .28);
+  content: "";
+}
+
+.bantani-repair-close .rc-section-kicker--light::before {
+  background: #dfcfb2;
+}
+
+.bantani-repair-close .rc-section-kicker--light::after {
+  background: rgba(255, 248, 239, .28);
+}
+
+.bantani-repair-close .rc-section-lead {
+  color: #39332c;
+  font-family: "黎ミン M", "Yu Mincho", serif;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.bantani-repair-close .rc-section-lead--light {
+  color: #fff8ef;
+}
+
+.bantani-repair-close #repair-concerns .rc-concerns__more {
+  overflow: clip;
+  border: 1px solid rgba(130, 107, 75, .24);
+  border-bottom-color: rgba(92, 75, 55, .28);
+  background: rgba(255, 253, 248, .46);
+  transition: background-color .4s ease, border-color .4s ease;
+}
+
+.bantani-repair-close #repair-concerns .rc-concerns__more[open] {
+  border-color: rgba(130, 107, 75, .34);
+  background: rgba(255, 253, 248, .82);
+}
+
+.bantani-repair-close #repair-concerns .rc-concerns__more summary {
+  display: flex;
+  align-items: center;
+  gap: clamp(.75rem, 1.25vw, 1rem);
+  padding: clamp(1rem, 1.7vw, 1.25rem) clamp(1.125rem, 2vw, 1.5rem);
+  color: var(--rc-ink);
+  cursor: pointer;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: clamp(1.125rem, 1.6vw, 1.375rem);
+  font-weight: 500;
+  line-height: 1.48;
+  letter-spacing: .07em;
+  list-style: none;
+}
+
+.bantani-repair-close #repair-concerns .rc-concerns__more summary:hover,
+.bantani-repair-close #repair-concerns .rc-concerns__more summary:focus-visible {
+  background: rgba(255, 255, 255, .46);
+}
+
+.bantani-repair-close #repair-concerns .rc-concerns__more summary:focus-visible {
+  outline: 2px solid rgba(130, 107, 75, .6);
+  outline-offset: -2px;
+}
+
+.bantani-repair-close #repair-concerns .rc-concerns__more summary::-webkit-details-marker {
+  display: none;
+}
+
+.bantani-repair-close #repair-concerns .rc-concerns__more-icon {
+  display: grid;
+  width: 1.875rem;
+  height: 1.875rem;
+  flex: 0 0 1.875rem;
+  place-items: center;
+  border: 1px solid rgba(130, 107, 75, .42);
+  color: var(--rc-gold);
+}
+
+.bantani-repair-close #repair-concerns .rc-concerns__more-icon svg {
+  width: 1.0625rem;
+  height: 1.0625rem;
+}
+
+.bantani-repair-close #repair-concerns .rc-concerns__more summary::after {
+  margin-left: auto;
+  color: var(--rc-gold);
+  content: "+";
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.bantani-repair-close #repair-concerns .rc-concerns__more[open] summary::after {
+  content: "-";
+}
+
+.bantani-repair-close #repair-concerns .rc-concerns__more-body {
+  display: grid;
+  gap: .75rem;
+  padding: clamp(1.25rem, 2.5vw, 2rem) clamp(1.125rem, 2vw, 1.5rem) clamp(1.75rem, 3vw, 2.5rem);
+  border-top: 1px solid rgba(130, 107, 75, .18);
+}
+
+.bantani-repair-close #repair-concerns .rc-concerns__more-body p {
+  margin: 0;
+  color: var(--rc-muted);
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.bantani-repair-close #repair-concerns .rc-concerns__more-body ul {
+  display: grid;
+  gap: .45rem 2rem;
+  margin: .25rem 0 0;
+  padding: .875rem 0 0;
+  border-top: 1px solid rgba(135, 108, 70, .14);
+  color: var(--rc-muted);
+  font-size: 12px;
+  line-height: 1.65;
+  list-style: none;
+}
+
+.bantani-repair-close #repair-concerns .rc-concerns__more-body li {
+  position: relative;
+  padding-left: 12px;
+}
+
+.bantani-repair-close #repair-concerns .rc-concerns__more-body li::before {
+  position: absolute;
+  top: .7em;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--rc-gold);
+  content: "";
+}
+
+@media (min-width: 901px) {
+  .bantani-repair-close #repair-concerns .rc-concerns__more {
+    display: block;
+    width: auto;
+    margin-top: 36px;
+    padding: 0;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concerns__more-body {
+    grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+    column-gap: clamp(2rem, 4vw, 4rem);
+    row-gap: .75rem;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concerns__more-body ul {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.bantani-repair-close .rc-chapter {
+  padding-block: clamp(84px, 8vw, 120px);
+  scroll-margin-top: 100px;
+}
+
+.bantani-repair-close .rc-chapter--white {
+  background: #fff;
+}
+
+.bantani-repair-close .rc-chapter--ivory {
+  background:
+    radial-gradient(circle at 12% 20%, rgba(169, 138, 91, 0.06) 0 1px, transparent 1.5px) 0 0 / 14px 14px,
+    var(--rc-ivory);
+}
+
+.bantani-repair-close .rc-chapter--stone {
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.42), transparent 44%),
+    var(--rc-stone);
+}
+
+.bantani-repair-close .rc-chapter--dark {
+  background:
+    linear-gradient(130deg, rgba(255, 255, 255, 0.03), transparent 45%),
+    linear-gradient(180deg, var(--rc-dark) 0%, var(--rc-dark-2) 100%);
+  color: rgba(255, 249, 240, 0.9);
+}
+
+.bantani-repair-close .rc-chapter--dark h2,
+.bantani-repair-close .rc-chapter--dark h3 {
+  color: #fff8ef;
+}
+
+.bantani-repair-close .rc-chapter--contact {
+  background: linear-gradient(100deg, #f6efe6, #fbf7f1);
+}
+
+.bantani-repair-close .rc-chapter__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.bantani-repair-close .rc-chapter__content {
+  min-width: 0;
+}
+
+.bantani-repair-close .rc-split-heading {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.7fr) minmax(0, 1fr);
+  gap: clamp(28px, 4vw, 64px);
+  align-items: start;
+}
+
+.bantani-repair-close .rc-split-heading h2,
+.bantani-repair-close .rc-center-heading h2,
+.bantani-repair-close .rc-closeout__copy h2 {
+  margin: 0 0 1.25rem;
+  color: var(--rc-ink);
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.48;
+  letter-spacing: .07em;
+}
+
+.bantani-repair-close .rc-chapter--dark .rc-closeout__copy h2 {
+  color: #fff8ef;
+}
+
+.bantani-repair-close .rc-split-heading > div:last-child,
+.bantani-repair-close .rc-center-heading {
+  display: grid;
+  gap: 14px;
+}
+
+.bantani-repair-close .rc-center-heading {
+  justify-items: center;
+  text-align: center;
+}
+
+.bantani-repair-close .rc-center-heading > p,
+.bantani-repair-close .rc-center-heading > h2 {
+  max-width: 900px;
+}
+
+.bantani-repair-close .rc-concern-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 42px;
+}
+
+.bantani-repair-close .rc-concern-card {
+  display: grid;
+  gap: 14px;
+  min-height: 260px;
+  padding: 26px 22px 22px;
+  border: 1px solid rgba(91, 75, 57, 0.14);
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 0.75rem 1.8rem rgba(53, 39, 24, 0.05);
+  transition: transform 160ms ease, border-color 160ms ease;
+}
+
+.bantani-repair-close .rc-concern-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--rc-line-strong);
+}
+
+.bantani-repair-close .rc-concern-card span,
+.bantani-repair-close .rc-method-card span,
+.bantani-repair-close .rc-mini-card span,
+.bantani-repair-close .rc-flow-panel span {
+  color: #866f4e;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.bantani-repair-close .rc-concern-card h3,
+.bantani-repair-close .rc-before-after__copy h3,
+.bantani-repair-close .rc-side-example h3,
+.bantani-repair-close .rc-flow-panel h3,
+.bantani-repair-close .rc-method-card h3,
+.bantani-repair-close .rc-mini-card h3,
+.bantani-repair-close .rc-contact-panel__copy h2 {
+  font-size: 26px;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+}
+
+.bantani-repair-close .rc-concern-card h3 {
+  font-size: 24px;
+}
+
+.bantani-repair-close .rc-concern-card strong {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: auto;
+  color: #5d4e3d;
+  font-size: 13px;
+}
+
+.bantani-repair-close .rc-point-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 28px;
+  padding: 0;
+  list-style: none;
+}
+
+.bantani-repair-close .rc-point-list li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.bantani-repair-close .rc-point-list li::before {
+  position: absolute;
+  top: 0.78em;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(169, 138, 91, 0.72);
+  content: "";
+}
+
+.bantani-repair-close .rc-before-after {
+  display: grid;
+  grid-template-columns: minmax(0, 1.14fr) minmax(280px, 0.86fr);
+  gap: clamp(28px, 4vw, 56px);
+  align-items: center;
+  margin-top: 44px;
+}
+
+.bantani-repair-close .rc-before-after__photos {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+}
+
+.bantani-repair-close .rc-before-after__photos figure,
+.bantani-repair-close .rc-side-example__pair figure,
+.bantani-repair-close .rc-closeout__pair figure {
+  display: grid;
+  gap: 10px;
+}
+
+.bantani-repair-close .rc-before-after__photos figcaption,
+.bantani-repair-close .rc-side-example__pair figcaption,
+.bantani-repair-close .rc-closeout__pair figcaption {
+  color: #7a664d;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.bantani-repair-close .rc-closeout__pair figcaption {
+  color: #dfcfb2;
+}
+
+.bantani-repair-close .rc-before-after__photos img {
+  aspect-ratio: 4 / 3;
+  border: 1px solid rgba(113, 92, 62, 0.14);
+}
+
+.bantani-repair-close .rc-before-after__arrow {
+  color: #8f724b;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.bantani-repair-close .rc-before-after__copy {
+  display: grid;
+  gap: 16px;
+}
+
+.bantani-repair-close .rc-method-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 34px;
+}
+
+.bantani-repair-close .rc-method-card,
+.bantani-repair-close .rc-mini-card,
+.bantani-repair-close .rc-flow-panel article {
+  padding: 24px 22px;
+  border: 1px solid rgba(91, 75, 57, 0.14);
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 0.75rem 1.8rem rgba(53, 39, 24, 0.05);
+}
+
+.bantani-repair-close .rc-method-card {
+  display: grid;
+  gap: 12px;
+}
+
+.bantani-repair-close .rc-method-card h3,
+.bantani-repair-close .rc-mini-card h3,
+.bantani-repair-close .rc-flow-panel h3 {
+  font-size: 22px;
+}
+
+.bantani-repair-close .rc-maintenance-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  gap: clamp(24px, 4vw, 48px);
+  align-items: start;
+  margin-top: 40px;
+}
+
+.bantani-repair-close .rc-maintenance-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.bantani-repair-close .rc-mini-card {
+  display: grid;
+  gap: 10px;
+  min-height: 188px;
+}
+
+.bantani-repair-close .rc-side-example {
+  display: grid;
+  gap: 16px;
+  padding: 26px 24px;
+  color: rgba(255, 249, 240, 0.92);
+  background: linear-gradient(180deg, #5b5044 0%, #4a4036 100%);
+  border-radius: 1.2rem;
+  box-shadow: 0 0.75rem 1.8rem rgba(53, 39, 24, 0.08);
+}
+
+.bantani-repair-close .rc-side-example h3 {
+  color: #fff8ef;
+  font-size: 24px;
+}
+
+.bantani-repair-close .rc-side-example__pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.bantani-repair-close .rc-side-example__pair figcaption {
+  color: #dfcfb2;
+}
+
+.bantani-repair-close .rc-side-example__pair img {
+  aspect-ratio: 1 / 1;
+}
+
+.bantani-repair-close .rc-flow-panel {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 42px;
+}
+
+.bantani-repair-close .rc-flow-panel article {
+  display: grid;
+  gap: 12px;
+}
+
+.bantani-repair-close .rc-note-panel {
+  margin-top: 26px;
+  padding: 22px 24px;
+  border-left: 3px solid rgba(169, 138, 91, 0.72);
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.bantani-repair-close .rc-closeout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.02fr) minmax(280px, 0.98fr);
+  gap: clamp(28px, 4vw, 56px);
+  align-items: start;
+}
+
+.bantani-repair-close .rc-closeout__copy {
+  display: grid;
+  gap: 16px;
+}
+
+.bantani-repair-close .rc-closeout__points {
+  display: grid;
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.bantani-repair-close .rc-closeout__points li {
+  position: relative;
+  padding-left: 22px;
+}
+
+.bantani-repair-close .rc-closeout__points li::before {
+  position: absolute;
+  top: 0.72em;
+  left: 0;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: rgba(223, 207, 178, 0.9);
+  content: "";
+}
+
+.bantani-repair-close .rc-closeout__photos {
+  display: grid;
+  gap: 16px;
+}
+
+.bantani-repair-close .rc-closeout__pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.bantani-repair-close .rc-closeout__pair img {
+  aspect-ratio: 4 / 3;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.bantani-repair-close .rc-contact-panel {
+  position: relative;
+  overflow: hidden;
+  min-height: 460px;
+  background: #d9d0c4;
+  border-radius: 1.25rem;
+  box-shadow: 0 0.8rem 1.8rem rgba(53, 39, 24, 0.06);
+}
+
+.bantani-repair-close .rc-contact-panel__media,
+.bantani-repair-close .rc-contact-panel__veil {
+  position: absolute;
+  inset: 0;
+}
+
+.bantani-repair-close .rc-contact-panel__veil {
+  background:
+    linear-gradient(90deg, rgba(246, 239, 230, 0.96) 0%, rgba(246, 239, 230, 0.9) 40%, rgba(246, 239, 230, 0.42) 67%, rgba(246, 239, 230, 0.08) 100%),
+    linear-gradient(180deg, rgba(45, 38, 31, 0.12), transparent 46%);
+}
+
+.bantani-repair-close .rc-contact-panel__copy {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 16px;
+  max-width: 650px;
+  padding: clamp(34px, 5vw, 64px);
+}
+
+.bantani-repair-close .rc-contact-panel__copy h2 {
+  margin-top: 8px;
+  font-size: clamp(34px, 3.4vw, 44px);
+}
+
+.bantani-repair-close .rc-contact-panel__actions {
+  margin-top: 8px;
+}
+
+/* PC editorial layout: keep the existing content while replacing card grids with ruled lists. */
+@media (min-width: 901px) {
+  .bantani-repair-close .rc-chapter {
+    padding-block: clamp(120px, 10vw, 164px);
+  }
+
+  .bantani-repair-close .rc-chapter__layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .bantani-repair-close #repair-concerns {
+    padding-block: clamp(72px, 5.5vw, 88px);
+    background: var(--rc-ivory);
+  }
+
+  .bantani-repair-close #repair-concerns .rc-chapter__content {
+    position: relative;
+    width: min(100%, 1180px);
+    margin-inline: auto;
+    padding-right: 220px;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-split-heading {
+    grid-template-columns: minmax(270px, 1fr) minmax(360px, 400px);
+    justify-content: space-between;
+    gap: 64px;
+    padding-bottom: 38px;
+    border-bottom-color: rgba(135, 108, 70, .24);
+  }
+
+  .bantani-repair-close #repair-concerns .rc-split-heading h2 {
+    margin-bottom: 16px;
+    font-size: clamp(30px, 2.15vw, 32px);
+    font-weight: 400;
+    line-height: 1.45;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-split-heading > div:nth-child(2) {
+    display: grid;
+    gap: 10px;
+    max-width: 680px;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concerns__photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: clamp(160px, 12.5vw, 190px);
+  height: 600px;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concerns__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-section-lead {
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+  .bantani-repair-close .rc-concern-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: clamp(42px, 6vw, 88px);
+    row-gap: 0;
+    margin-top: 70px;
+    border-top: 1px solid var(--rc-line-strong);
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-grid {
+    grid-template-columns: minmax(0, 1fr);
+    margin-top: 0;
+    margin-right: 0;
+    border-top: 0;
+  }
+
+  .bantani-repair-close .rc-concern-card,
+  .bantani-repair-close .rc-method-card,
+  .bantani-repair-close .rc-mini-card,
+  .bantani-repair-close .rc-flow-panel article {
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .bantani-repair-close .rc-concern-card {
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto 1fr;
+    column-gap: 20px;
+    min-height: 0;
+    padding: 20px 0 22px;
+    border-bottom: 1px solid var(--rc-line);
+  }
+
+  .bantani-repair-close .rc-concern-card:hover {
+    transform: none;
+    border-color: var(--rc-line-strong);
+  }
+
+  .bantani-repair-close .rc-concern-card span {
+    grid-column: 1 / -1;
+  }
+
+  .bantani-repair-close .rc-concern-card h3 {
+    margin-top: 3px;
+    font-size: 25px;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card h3 {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .bantani-repair-close .rc-concern-card p {
+    grid-column: 1 / -1;
+    max-width: 32em;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .bantani-repair-close .rc-concern-card strong {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: end;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card strong {
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card strong span {
+    font-size: 12px;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card {
+    display: grid;
+    grid-template-columns: 100px minmax(260px, 300px) minmax(0, 1fr) max-content;
+    grid-template-rows: auto auto;
+    column-gap: 22px;
+    row-gap: 5px;
+    align-items: center;
+    min-height: 0;
+    padding: 17px 0 18px;
+    border-bottom-color: rgba(135, 108, 70, .2);
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card:has(.rc-concern-card__notes) {
+    padding-block: 20px;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card > span {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    align-self: center;
+    color: rgba(134, 111, 78, .76);
+    font-size: 10px;
+    letter-spacing: .12em;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card h3 {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    margin: 0;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card h3 br {
+    display: none;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card p {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    margin: 0;
+    max-width: none;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card:has(.rc-concern-card__notes) p {
+    grid-row: 1;
+    align-self: end;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card__notes {
+    grid-column: 3;
+    grid-row: 2;
+    color: var(--rc-muted);
+    font-size: 12.5px;
+    line-height: 1.7;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card strong {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+    align-self: center;
+  }
+
+  /* Keep the concerns block as a quiet directory: the photo supports the title, not each row. */
+  .bantani-repair-close #repair-concerns {
+    background: #fff;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-chapter__content {
+    padding-right: 220px;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-split-heading {
+    display: block;
+    min-height: 126px;
+    padding-bottom: 30px;
+    border-bottom-color: rgba(135, 108, 70, .18);
+  }
+
+  .bantani-repair-close #repair-concerns .rc-split-heading h2 {
+    margin: 0;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concerns__photo {
+    width: 185px;
+    height: 360px;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concerns__photo img {
+    object-position: 67% center;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-grid {
+    margin-top: 0;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card {
+    grid-template-columns: minmax(270px, 330px) minmax(0, 1fr) max-content;
+    column-gap: 34px;
+    row-gap: 4px;
+    padding: 19px 0 20px;
+    border-bottom-color: rgba(135, 108, 70, .16);
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card:has(.rc-concern-card__notes) {
+    padding-block: 19px;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card h3 {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.55;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card p {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card:has(.rc-concern-card__notes) p {
+    grid-row: 1;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card__notes {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card strong {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    min-width: 82px;
+    font-size: 13px;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concerns__intro {
+    display: grid;
+    gap: 9px;
+    width: calc(100% + 220px);
+    margin-top: 38px;
+    padding: 26px 32px 28px;
+    border: 1px solid rgba(135, 108, 70, .18);
+    background: rgba(250, 247, 240, .55);
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concerns__intro p {
+    max-width: 900px;
+    margin: 0;
+    color: var(--rc-muted);
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concerns__intro .rc-section-lead {
+    color: var(--rc-ink);
+    font-family: "黎ミン M", "Yu Mincho", serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concerns__photo {
+    top: 18px;
+    bottom: 0;
+    height: auto;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concerns__photo figcaption {
+    position: absolute;
+    inset: 22px 16px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: rgba(255, 255, 255, .9);
+    font-family: "黎ミン M", "Yu Mincho", serif;
+    font-size: 12px;
+    line-height: 1.65;
+    letter-spacing: .1em;
+    text-shadow: 0 1px 7px rgba(17, 13, 10, .65);
+    writing-mode: vertical-rl;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concerns__photo figcaption span:last-child {
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, .65);
+    font-size: 10px;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card {
+    position: relative;
+    grid-template-columns: 130px minmax(250px, 300px) minmax(0, 1fr) max-content;
+    grid-template-rows: auto;
+    column-gap: 30px;
+    padding: 21px 14px;
+    transition: background-color .24s ease, box-shadow .24s ease, transform .24s ease;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card > span {
+    grid-column: 1;
+    grid-row: 1;
+    color: var(--rc-gold);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: .05em;
+    line-height: 1.45;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card h3 {
+    grid-column: 2;
+    grid-row: 1;
+    transition: color .24s ease;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card p {
+    grid-column: 3;
+    grid-row: 1;
+    transition: color .24s ease;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card strong {
+    grid-column: 4;
+    grid-row: 1;
+    transition: color .24s ease;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card strong span {
+    display: inline-block;
+    transition: transform .24s ease;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card:is(:hover, :focus-visible) {
+    background: rgba(190, 166, 121, .075);
+    box-shadow: inset 2px 0 0 var(--rc-gold);
+    transform: translateX(3px);
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card:is(:hover, :focus-visible) h3,
+  .bantani-repair-close #repair-concerns .rc-concern-card:is(:hover, :focus-visible) strong {
+    color: var(--rc-gold);
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card:is(:hover, :focus-visible) strong span {
+    transform: translateX(5px);
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concerns__intro {
+    width: auto;
+    margin-top: 36px;
+    padding: 24px 30px 26px;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concerns__intro ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 7px 34px;
+    margin: 5px 0 0;
+    padding: 12px 0 0;
+    border-top: 1px solid rgba(135, 108, 70, .14);
+    color: var(--rc-muted);
+    font-size: 12px;
+    line-height: 1.65;
+    list-style: none;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concerns__intro li {
+    position: relative;
+    padding-left: 12px;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concerns__intro li::before {
+    content: "";
+    position: absolute;
+    top: .7em;
+    left: 0;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: var(--rc-gold);
+  }
+
+  .bantani-repair-close #repair-concerns.is-concerns-motion-ready .rc-split-heading > div,
+  .bantani-repair-close #repair-concerns.is-concerns-motion-ready .rc-concerns__intro {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateY(26px);
+    transition: opacity .9s cubic-bezier(.22, 1, .36, 1), filter .9s cubic-bezier(.22, 1, .36, 1), transform .9s cubic-bezier(.22, 1, .36, 1);
+  }
+
+  .bantani-repair-close #repair-concerns.is-concerns-motion-ready .rc-concerns__photo img {
+    opacity: 0;
+    transform: scale(1.035);
+    transition: opacity .85s cubic-bezier(.22, 1, .36, 1), transform 1.1s cubic-bezier(.22, 1, .36, 1);
+  }
+
+  .bantani-repair-close #repair-concerns.is-concerns-motion-ready .rc-concern-card {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity .72s cubic-bezier(.22, 1, .36, 1), transform .72s cubic-bezier(.22, 1, .36, 1), background-color .24s ease, box-shadow .24s ease;
+  }
+
+  .bantani-repair-close #repair-concerns.is-concerns-motion-visible .rc-split-heading > div,
+  .bantani-repair-close #repair-concerns.is-concerns-motion-visible .rc-concerns__intro,
+  .bantani-repair-close #repair-concerns.is-concerns-motion-visible .rc-concerns__photo img,
+  .bantani-repair-close #repair-concerns.is-concerns-motion-visible .rc-concern-card {
+    opacity: 1;
+    filter: blur(0);
+    transform: none;
+  }
+
+  .bantani-repair-close #repair-concerns.is-concerns-motion-ready.is-concerns-motion-visible .rc-split-heading > div { transition-delay: .08s; }
+  .bantani-repair-close #repair-concerns.is-concerns-motion-ready.is-concerns-motion-visible .rc-concerns__photo img { transition-delay: .2s; }
+  .bantani-repair-close #repair-concerns.is-concerns-motion-ready.is-concerns-motion-visible .rc-concern-card:nth-child(1) { transition-delay: .38s; }
+  .bantani-repair-close #repair-concerns.is-concerns-motion-ready.is-concerns-motion-visible .rc-concern-card:nth-child(2) { transition-delay: .54s; }
+  .bantani-repair-close #repair-concerns.is-concerns-motion-ready.is-concerns-motion-visible .rc-concern-card:nth-child(3) { transition-delay: .7s; }
+  .bantani-repair-close #repair-concerns.is-concerns-motion-ready.is-concerns-motion-visible .rc-concern-card:nth-child(4) { transition-delay: .86s; }
+
+  .bantani-repair-close #repair-concerns.is-concerns-motion-ready.is-concerns-motion-visible .rc-concerns__intro { transition-delay: 1.08s; }
+
+  .bantani-repair-close #repair-concerns.is-concerns-motion-ready .rc-concerns__photo figcaption > span > span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateY(.25em);
+    transition: opacity .5s cubic-bezier(.22, 1, .36, 1), filter .5s cubic-bezier(.22, 1, .36, 1), transform .5s cubic-bezier(.22, 1, .36, 1);
+  }
+
+  .bantani-repair-close #repair-concerns.is-concerns-motion-ready .rc-concerns__photo figcaption > span:first-child > span {
+    transition-delay: calc(.3s + var(--rc-path-char-index) * .075s);
+  }
+
+  .bantani-repair-close #repair-concerns.is-concerns-motion-ready .rc-concerns__photo figcaption > span:last-child > span {
+    transition-delay: calc(2.25s + var(--rc-path-char-index) * .075s);
+  }
+
+  .bantani-repair-close #repair-concerns.is-concerns-motion-visible .rc-concerns__photo figcaption > span > span {
+    opacity: 1;
+    filter: blur(0);
+    transform: none;
+  }
+
+  .bantani-repair-close .rc-point-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 44px;
+    row-gap: 10px;
+    max-width: 980px;
+    margin-top: 42px;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-point-list {
+    margin-top: 28px;
+    max-width: none;
+    padding-top: 18px;
+    border-top: 1px solid var(--rc-line);
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .bantani-repair-close .rc-before-after {
+    grid-template-columns: minmax(0, 1.3fr) minmax(250px, 0.7fr);
+    gap: clamp(48px, 6vw, 96px);
+    align-items: end;
+    margin-top: 76px;
+  }
+
+  .bantani-repair-close .rc-before-after__photos {
+    gap: 20px;
+  }
+
+  .bantani-repair-close .rc-before-after__photos img {
+    aspect-ratio: 5 / 4;
+  }
+
+  .bantani-repair-close .rc-before-after__copy {
+    padding-bottom: 18px;
+  }
+
+  .bantani-repair-close .rc-method-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-top: 86px;
+    border-top: 1px solid var(--rc-line-strong);
+  }
+
+  .bantani-repair-close .rc-method-card {
+    grid-template-columns: minmax(210px, 0.7fr) minmax(0, 1.3fr);
+    gap: 28px;
+    align-items: baseline;
+    padding: 30px 0;
+    border-bottom: 1px solid var(--rc-line);
+  }
+
+  .bantani-repair-close .rc-method-card h3,
+  .bantani-repair-close .rc-mini-card h3,
+  .bantani-repair-close .rc-flow-panel h3 {
+    font-size: 23px;
+  }
+
+  /* 03: treat the reform example as an editorial spread rather than a grid of panels. */
+  .bantani-repair-close #repair-reform {
+    background: var(--rc-ivory);
+  }
+
+  .bantani-repair-close #repair-reform .rc-chapter__content {
+    position: relative;
+    width: min(100%, 1180px);
+    margin-inline: auto;
+    padding-right: 72px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-split-heading {
+    grid-template-columns: minmax(290px, .78fr) minmax(0, 1.22fr);
+    gap: clamp(72px, 9vw, 150px);
+    padding-bottom: 42px;
+    border-bottom-color: rgba(135, 108, 70, .22);
+  }
+
+  .bantani-repair-close #repair-reform .rc-split-heading h2 {
+    max-width: none;
+    font-size: clamp(34px, 2.6vw, 40px);
+    line-height: 1.3;
+    white-space: nowrap;
+  }
+
+  .bantani-repair-close #repair-reform .rc-split-heading > div:nth-child(2) {
+    max-width: 590px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-before-after {
+    grid-template-columns: minmax(0, 1.28fr) minmax(290px, .62fr);
+    gap: clamp(64px, 8vw, 132px);
+    align-items: start;
+    margin-top: 78px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-before-after__photos {
+    grid-template-columns: minmax(0, .76fr) 34px minmax(0, 1.24fr);
+    gap: 18px;
+    align-items: center;
+  }
+
+  .bantani-repair-close #repair-reform .rc-before-after__photos figure:first-child {
+    padding-top: 46px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-before-after__photos figure {
+    gap: 12px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-before-after__photos figcaption {
+    color: var(--rc-gold);
+    font-size: 11px;
+    letter-spacing: .18em;
+  }
+
+  .bantani-repair-close #repair-reform .rc-before-after__photos img {
+    aspect-ratio: 4 / 3;
+    border: 0;
+  }
+
+  .bantani-repair-close #repair-reform .rc-before-after__arrow {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .bantani-repair-close #repair-reform .rc-before-after__copy {
+    gap: 18px;
+    margin-top: 86px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(135, 108, 70, .22);
+  }
+
+  .bantani-repair-close #repair-reform .rc-before-after__copy h3 {
+    font-size: clamp(25px, 2vw, 31px);
+    font-weight: 400;
+    line-height: 1.55;
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-grid {
+    margin-top: 94px;
+    border-top-color: rgba(135, 108, 70, .22);
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-card {
+    grid-template-columns: minmax(260px, .78fr) minmax(0, 1.22fr);
+    gap: clamp(52px, 7vw, 108px);
+    align-items: baseline;
+    padding: 31px 0 33px;
+    border-bottom-color: rgba(135, 108, 70, .18);
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-card h3 {
+    font-size: 21px;
+    font-weight: 400;
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-card p {
+    max-width: 620px;
+    font-size: 15px;
+    line-height: 1.9;
+  }
+
+  .bantani-repair-close #repair-reform {
+    padding-block: 72px 80px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-split-heading {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: start;
+    min-height: 112px;
+    padding-bottom: 24px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-reform__vertical-lead {
+    position: absolute;
+    top: 0;
+    right: 18px;
+    margin: 0;
+    color: var(--rc-muted);
+    font-family: "黎ミン M", "Yu Mincho", serif;
+    font-size: 13px;
+    line-height: 1.9;
+    letter-spacing: .08em;
+    writing-mode: vertical-rl;
+  }
+
+  .bantani-repair-close #repair-reform .rc-before-after {
+    grid-template-columns: minmax(0, 1.42fr) minmax(280px, .58fr);
+    gap: clamp(56px, 7vw, 112px);
+    margin-top: 46px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-before-after__photos {
+    grid-template-columns: minmax(0, .82fr) 26px minmax(0, 1.18fr);
+    gap: 14px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-before-after__photos figure:first-child {
+    padding-top: 26px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-before-after__photos img {
+    aspect-ratio: 3 / 2;
+  }
+
+  .bantani-repair-close #repair-reform .rc-before-after__copy {
+    gap: 22px;
+    margin-top: 38px;
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  .bantani-repair-close #repair-reform .rc-before-after__copy h3 {
+    color: #9b7440;
+    font-size: clamp(21px, 1.75vw, 27px);
+    font-weight: 400;
+    line-height: 1.74;
+  }
+
+  .bantani-repair-close #repair-reform .rc-before-after__copy p:last-child {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+    margin-top: 58px;
+    border-bottom: 1px solid rgba(135, 108, 70, .18);
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    min-height: 0;
+    padding: 23px 30px 26px;
+    border-bottom: 0;
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-card + .rc-method-card {
+    border-left: 1px solid rgba(135, 108, 70, .18);
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-card h3 {
+    font-size: 20px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-card p {
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .bantani-repair-close #repair-reform .rc-reform__note {
+    display: grid;
+    gap: 9px;
+    margin-top: 36px;
+    padding: 22px 28px 24px;
+    border: 1px solid rgba(135, 108, 70, .18);
+    background: rgba(255, 255, 255, .28);
+  }
+
+  .bantani-repair-close #repair-reform .rc-reform__note p {
+    max-width: 920px;
+    margin: 0;
+    color: var(--rc-muted);
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .bantani-repair-close #repair-reform .rc-reform__note p:first-child {
+    color: var(--rc-ink);
+    font-family: "黎ミン M", "Yu Mincho", serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .bantani-repair-close #repair-reform {
+    padding-block: 60px 66px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-before-after {
+    grid-template-columns: minmax(0, 1.32fr) minmax(330px, .68fr);
+    gap: clamp(30px, 4vw, 56px);
+    margin-top: 34px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-split-heading {
+    min-height: 68px;
+    padding-bottom: 8px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-before-after__copy {
+    align-self: center;
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+
+  .bantani-repair-close #repair-reform .rc-before-after__copy h3 {
+    font-size: clamp(20px, 1.55vw, 24px);
+    line-height: 1.68;
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-grid {
+    margin-top: 40px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-reform__note {
+    margin-top: 28px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-before-after {
+    display: block;
+    margin-top: 28px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-before-after__photos {
+    width: min(100%, 700px);
+    margin-left: clamp(110px, 13vw, 190px);
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-grid {
+    margin-top: 34px;
+    border-top: 1px solid rgba(135, 108, 70, .22);
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-card {
+    min-height: 148px;
+    padding: 26px 38px 24px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-card:first-child {
+    padding-left: 8px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-card__mark {
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin: 4px 0 14px;
+    background: #b28247;
+    transform: rotate(45deg);
+  }
+
+  .bantani-repair-close #repair-reform {
+    padding-block: 52px 56px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-split-heading {
+    min-height: 50px;
+    padding-bottom: 0;
+  }
+
+  .bantani-repair-close #repair-reform .rc-reform__vertical-lead {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .bantani-repair-close #repair-reform .rc-before-after {
+    margin-top: 12px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-grid {
+    margin-top: 26px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-card {
+    gap: 4px;
+    align-content: start;
+    align-items: start;
+    grid-template-rows: 8px auto auto;
+    min-height: 0;
+    padding: 18px 30px 14px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-card:first-child {
+    padding-left: 8px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-card__mark {
+    margin: 0 0 14px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-card h3 {
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-card p {
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .bantani-repair-close #repair-reform .rc-reform__note {
+    margin-top: 22px;
+    padding-block: 18px 20px;
+  }
+
+  .bantani-repair-close #repair-reform.is-reform-motion-ready .rc-split-heading > div,
+  .bantani-repair-close #repair-reform.is-reform-motion-ready .rc-reform__vertical-lead,
+  .bantani-repair-close #repair-reform.is-reform-motion-ready .rc-before-after__photos,
+  .bantani-repair-close #repair-reform.is-reform-motion-ready .rc-method-card,
+  .bantani-repair-close #repair-reform.is-reform-motion-ready .rc-reform__note {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .78s cubic-bezier(.22, 1, .36, 1), transform .78s cubic-bezier(.22, 1, .36, 1);
+  }
+
+  .bantani-repair-close #repair-reform.is-reform-motion-ready .rc-before-after__photos {
+    transform: translateY(16px) scale(.985);
+    transition-duration: .92s;
+  }
+
+  .bantani-repair-close #repair-reform.is-reform-motion-ready .rc-reform__vertical-lead > span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateY(.24em);
+    transition: opacity .48s cubic-bezier(.22, 1, .36, 1), filter .48s cubic-bezier(.22, 1, .36, 1), transform .48s cubic-bezier(.22, 1, .36, 1);
+  }
+
+  .bantani-repair-close #repair-reform.is-reform-motion-visible .rc-split-heading > div,
+  .bantani-repair-close #repair-reform.is-reform-motion-visible .rc-reform__vertical-lead,
+  .bantani-repair-close #repair-reform.is-reform-motion-visible .rc-before-after__photos,
+  .bantani-repair-close #repair-reform.is-reform-motion-visible .rc-method-card,
+  .bantani-repair-close #repair-reform.is-reform-motion-visible .rc-reform__note {
+    opacity: 1;
+    transform: none;
+  }
+
+  .bantani-repair-close #repair-reform.is-reform-motion-visible .rc-reform__vertical-lead > span {
+    opacity: 1;
+    filter: blur(0);
+    transform: none;
+  }
+
+  .bantani-repair-close #repair-reform.is-reform-motion-ready.is-reform-motion-visible .rc-split-heading > div { transition-delay: .06s; }
+  .bantani-repair-close #repair-reform.is-reform-motion-ready.is-reform-motion-visible .rc-reform__vertical-lead { transition-delay: .18s; }
+  .bantani-repair-close #repair-reform.is-reform-motion-ready.is-reform-motion-visible .rc-reform__vertical-lead > span { transition-delay: calc(.22s + var(--rc-reform-char-index) * .065s); }
+  .bantani-repair-close #repair-reform.is-reform-motion-ready.is-reform-motion-visible .rc-before-after__photos { transition-delay: .28s; }
+  .bantani-repair-close #repair-reform.is-reform-motion-ready.is-reform-motion-visible .rc-method-card:nth-child(1) { transition-delay: .48s; }
+  .bantani-repair-close #repair-reform.is-reform-motion-ready.is-reform-motion-visible .rc-method-card:nth-child(2) { transition-delay: .61s; }
+  .bantani-repair-close #repair-reform.is-reform-motion-ready.is-reform-motion-visible .rc-method-card:nth-child(3) { transition-delay: .74s; }
+  .bantani-repair-close #repair-reform.is-reform-motion-ready.is-reform-motion-visible .rc-reform__note { transition-delay: .9s; }
+
+  .bantani-repair-close .rc-maintenance-layout {
+    grid-template-columns: minmax(0, 1.18fr) minmax(310px, 0.72fr);
+    gap: clamp(50px, 6vw, 92px);
+    margin-top: 70px;
+  }
+
+  .bantani-repair-close .rc-maintenance-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: clamp(34px, 5vw, 66px);
+    row-gap: 0;
+    border-top: 1px solid var(--rc-line-strong);
+  }
+
+  .bantani-repair-close .rc-mini-card {
+    min-height: 0;
+    padding: 26px 0 30px;
+    border-bottom: 1px solid var(--rc-line);
+  }
+
+  .bantani-repair-close .rc-side-example {
+    gap: 22px;
+    min-height: 100%;
+    padding: 38px 34px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .bantani-repair-close .rc-side-example__pair {
+    gap: 12px;
+  }
+
+  .bantani-repair-close .rc-flow-panel {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: clamp(40px, 6vw, 88px);
+    row-gap: 0;
+    margin-top: 70px;
+    border-top: 1px solid var(--rc-line-strong);
+  }
+
+  .bantani-repair-close .rc-flow-panel article {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 10px;
+    padding: 28px 0 34px;
+    border-bottom: 1px solid var(--rc-line);
+  }
+
+  .bantani-repair-close .rc-note-panel {
+    max-width: 890px;
+    margin-top: 48px;
+    padding: 0 0 0 24px;
+    border-left: 1px solid rgba(169, 138, 91, 0.72);
+    background: transparent;
+  }
+
+  .bantani-repair-close .rc-closeout {
+    grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1.1fr);
+    gap: clamp(66px, 8vw, 128px);
+  }
+
+  .bantani-repair-close .rc-closeout__copy {
+    padding-top: 12px;
+  }
+
+  .bantani-repair-close .rc-closeout__photos {
+    gap: 28px;
+    padding-top: 96px;
+  }
+
+  .bantani-repair-close .rc-closeout__pair {
+    gap: 22px;
+  }
+}
+
+@media (min-width: 901px) {
+  .bantani-repair-close .rc-path-nav {
+    background: var(--lower-selector-bg);
+  }
+
+  .bantani-repair-close .rc-path-nav__inner {
+    display: grid;
+    grid-template-columns: minmax(250px, 0.82fr) minmax(0, 1.18fr);
+    gap: clamp(64px, 9vw, 146px);
+    align-items: center;
+    padding-block: clamp(44px, 4vw, 60px);
+  }
+
+  .bantani-repair-close .rc-path-nav__heading {
+    padding-top: 0;
+  }
+
+  .bantani-repair-close .rc-path-nav__kicker {
+    margin: 0 0 15px;
+  }
+
+  .bantani-repair-close .rc-path-nav__heading h2:not(.lower-page-selector__heading) {
+    margin: 0;
+    color: var(--rc-ink);
+    font-family: "黎ミン M", "Yu Mincho", serif;
+    font-size: clamp(24px, 1.9vw, 28px);
+    font-weight: 400;
+    line-height: 1.72;
+    letter-spacing: 0.08em;
+  }
+
+  .bantani-repair-close .rc-path-nav.is-path-nav-motion-ready .rc-path-nav__heading h2 > span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+    transform: translateY(.24em);
+    transition:
+      opacity .62s cubic-bezier(.22, 1, .36, 1),
+      filter .62s cubic-bezier(.22, 1, .36, 1),
+      transform .62s cubic-bezier(.22, 1, .36, 1);
+    transition-delay: calc(.1s + var(--rc-path-char-index) * .042s);
+  }
+
+  .bantani-repair-close .rc-path-nav.is-path-nav-motion-visible .rc-path-nav__heading h2 > span {
+    opacity: 1;
+    filter: blur(0);
+    transform: none;
+  }
+
+  .bantani-repair-close .rc-path-nav__links {
+    display: grid;
+    gap: 0;
+  }
+
+  .bantani-repair-close .rc-path-nav__link {
+    display: grid;
+    grid-template-columns: 104px minmax(0, 1fr) auto;
+    gap: 4px 22px;
+    align-items: end;
+    padding: 15px 0 16px;
+    border-top: 1px solid var(--rc-line-strong);
+    transition: color .24s ease, background .24s ease, border-color .24s ease, transform .24s ease;
+  }
+
+  .bantani-repair-close .rc-path-nav.is-path-nav-motion-ready .rc-path-nav__link {
+    opacity: 0;
+    transform: translateY(12px);
+    transition:
+      color .24s ease,
+      background .24s ease,
+      border-color .24s ease,
+      transform .62s cubic-bezier(.22, 1, .36, 1),
+      opacity .62s cubic-bezier(.22, 1, .36, 1);
+  }
+
+  .bantani-repair-close .rc-path-nav.is-path-nav-motion-ready.is-path-nav-motion-visible .rc-path-nav__link {
+    opacity: 1;
+    transform: none;
+  }
+
+  .bantani-repair-close .rc-path-nav.is-path-nav-motion-ready.is-path-nav-motion-visible .rc-path-nav__link:nth-child(1) {
+    transition-delay: .16s;
+  }
+
+  .bantani-repair-close .rc-path-nav.is-path-nav-motion-ready.is-path-nav-motion-visible .rc-path-nav__link:nth-child(2) {
+    transition-delay: .28s;
+  }
+
+  .bantani-repair-close .rc-path-nav__link--organize {
+    width: calc(100% - clamp(32px, 7vw, 92px));
+    margin-left: auto;
+  }
+
+  .bantani-repair-close .rc-path-nav__link:is(:hover, :focus-visible) {
+    color: #2f2821;
+    background: rgba(255, 255, 255, .34);
+    border-color: rgba(74, 61, 47, .44);
+    transform: translateY(-1px);
+  }
+
+  .bantani-repair-close .rc-path-nav__title {
+    grid-column: 2;
+    grid-row: 1;
+    font-family: "黎ミン M", "Yu Mincho", serif;
+    font-size: clamp(22px, 1.75vw, 26px);
+    line-height: 1.4;
+    letter-spacing: 0.08em;
+    position: relative;
+  }
+
+  .bantani-repair-close .rc-path-nav__title::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background: var(--rc-gold);
+    opacity: 0;
+    transform: scaleX(.24);
+    transform-origin: center;
+    transition: opacity 220ms ease, transform 220ms ease;
+  }
+
+  .bantani-repair-close .rc-path-nav__link:is(:hover, :focus-visible) .rc-path-nav__title::after {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+
+  .bantani-repair-close .rc-path-nav__description {
+    grid-column: 2;
+    grid-row: 2;
+    color: var(--rc-muted);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .bantani-repair-close .rc-path-nav__arrow {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    align-self: center;
+    padding: 0;
+    color: var(--rc-gold);
+    font-size: 16px;
+    line-height: 1;
+    transition: color 220ms ease, transform 220ms ease;
+  }
+
+  .bantani-repair-close .rc-path-nav__link:is(:hover, :focus-visible) .rc-path-nav__arrow {
+    transform: translateX(4px);
+  }
+
+  .bantani-repair-close .rc-path-nav__photo {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    width: 104px;
+    height: 72px;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .bantani-repair-close .rc-path-nav__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+}
+
+@media (min-width: 901px) {
+  .bantani-repair-close .rc-works-action {
+    margin-top: 30px;
+    text-align: right;
+  }
+
+  .bantani-repair-close #repair-small .rc-works-action,
+  .bantani-repair-close #repair-relocation .rc-works-action {
+    margin-top: 36px;
+  }
+
+  .bantani-repair-close .rc-works-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    min-height: 48px;
+    padding: 0 20px;
+    border: 1px solid rgba(74, 61, 47, .28);
+    color: #4b4034;
+    background: transparent;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-decoration: none;
+    transition: color .24s ease, background .24s ease, border-color .24s ease, transform .24s ease;
+  }
+
+  .bantani-repair-close .rc-works-button > span:last-child {
+    transition: transform .24s ease;
+  }
+
+  .bantani-repair-close .rc-works-button:is(:hover, :focus-visible) {
+    color: #2f2821;
+    background: rgba(255, 255, 255, .34);
+    border-color: rgba(74, 61, 47, .44);
+    transform: translateY(-1px);
+  }
+
+  .bantani-repair-close .rc-works-button:is(:hover, :focus-visible) > span:last-child {
+    transform: translateX(4px);
+  }
+
+  .bantani-repair-close .rc-works-action--light {
+    margin-top: 42px;
+  }
+
+  .bantani-repair-close .rc-works-action--light .rc-works-button {
+    border-color: rgba(223, 207, 178, .46);
+    color: #dfcfb2;
+  }
+
+  .bantani-repair-close .rc-works-action--light .rc-works-button:is(:hover, :focus-visible) {
+    color: #fff8ef;
+    background: rgba(255, 255, 255, .1);
+    border-color: rgba(255, 248, 239, .72);
+  }
+}
+
+@media (min-width: 901px) {
+  .bantani-repair-close #repair-small {
+    padding-block: 96px 104px;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-heading {
+    grid-template-columns: minmax(450px, .94fr) minmax(0, 1.06fr);
+    gap: clamp(64px, 8vw, 128px);
+    padding-bottom: 38px;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-heading h2 {
+    max-width: 560px;
+    font-size: clamp(31px, 2.45vw, 38px);
+    line-height: 1.38;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-heading > div:last-child {
+    max-width: 560px;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-layout {
+    grid-template-columns: minmax(340px, .76fr) minmax(0, 1.24fr);
+    gap: clamp(58px, 8vw, 120px);
+    align-items: start;
+    margin-top: 54px;
+  }
+
+  .bantani-repair-close #repair-small .rc-side-example {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: stretch;
+    min-height: 438px;
+    padding: 36px 34px 32px;
+    background: #4e4338;
+  }
+
+  .bantani-repair-close #repair-small .rc-side-example h3 {
+    max-width: 290px;
+    color: #fff8ef;
+    font-size: 23px;
+    line-height: 1.62;
+  }
+
+  .bantani-repair-close #repair-small .rc-side-example__pair {
+    margin-top: 6px;
+    gap: 14px;
+  }
+
+  .bantani-repair-close #repair-small .rc-side-example__pair figure {
+    gap: 8px;
+  }
+
+  .bantani-repair-close #repair-small .rc-side-example__pair img {
+    aspect-ratio: 1 / 1;
+  }
+
+  .bantani-repair-close #repair-small .rc-side-example > p:last-child {
+    margin-top: auto;
+    color: rgba(255, 249, 240, .88);
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-grid {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: start;
+    column-gap: clamp(42px, 5vw, 72px);
+  }
+
+  .bantani-repair-close #repair-small .rc-mini-card {
+    min-height: 134px;
+    padding: 26px 0 28px;
+  }
+
+  .bantani-repair-close #repair-small .rc-mini-card h3 {
+    color: var(--rc-ink);
+    font-size: 21px;
+    line-height: 1.45;
+  }
+
+  .bantani-repair-close #repair-small .rc-mini-card p {
+    max-width: 255px;
+    font-size: 13.5px;
+    line-height: 1.85;
+  }
+}
+
+/* Keep the concern detail compact until the reader asks to open it. */
+.bantani-repair-close #repair-concerns .rc-concerns__more {
+  display: block;
+  width: auto;
+  margin-top: 36px;
+  padding: 0;
+  border: 1px solid rgba(130, 107, 75, .24);
+  border-bottom-color: rgba(92, 75, 55, .28);
+  background: rgba(255, 253, 248, .46);
+}
+
+.bantani-repair-close #repair-concerns .rc-concerns__more[open] {
+  border-color: rgba(130, 107, 75, .34);
+  background: rgba(255, 253, 248, .82);
+}
+
+.bantani-repair-close #repair-concerns .rc-concerns__more .rc-concerns__more-body {
+  display: grid;
+  gap: .75rem;
+  padding: clamp(1.25rem, 2.5vw, 2rem) clamp(1.125rem, 2vw, 1.5rem) clamp(1.75rem, 3vw, 2.5rem);
+}
+
+.bantani-repair-close #repair-concerns .rc-concerns__more .rc-concerns__more-body ul {
+  display: grid;
+  gap: .45rem 2rem;
+  margin: .25rem 0 0;
+  padding: .875rem 0 0;
+  border-top: 1px solid rgba(135, 108, 70, .14);
+}
+
+@media (min-width: 901px) {
+  .bantani-repair-close #repair-concerns .rc-concerns__more .rc-concerns__more-body {
+    grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+    column-gap: clamp(2rem, 4vw, 4rem);
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concerns__more .rc-concerns__more-body ul {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.bantani-repair-close #repair-reform .rc-reform__more {
+  display: block;
+  overflow: clip;
+  margin-top: 26px;
+  padding: 0;
+  border: 1px solid rgba(130, 107, 75, .24);
+  border-bottom-color: rgba(92, 75, 55, .28);
+  background: rgba(255, 253, 248, .46);
+  transition: background-color .4s ease, border-color .4s ease;
+}
+
+.bantani-repair-close #repair-reform .rc-reform__more[open] {
+  border-color: rgba(130, 107, 75, .34);
+  background: rgba(255, 253, 248, .82);
+}
+
+.bantani-repair-close #repair-reform .rc-reform__more summary {
+  display: flex;
+  align-items: center;
+  gap: clamp(.75rem, 1.25vw, 1rem);
+  padding: clamp(1rem, 1.7vw, 1.25rem) clamp(1.125rem, 2vw, 1.5rem);
+  color: var(--rc-ink);
+  cursor: pointer;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: clamp(1.125rem, 1.6vw, 1.375rem);
+  font-weight: 500;
+  line-height: 1.48;
+  letter-spacing: .07em;
+  list-style: none;
+}
+
+.bantani-repair-close #repair-reform .rc-reform__more summary:hover,
+.bantani-repair-close #repair-reform .rc-reform__more summary:focus-visible {
+  background: rgba(255, 255, 255, .46);
+}
+
+.bantani-repair-close #repair-reform .rc-reform__more summary:focus-visible {
+  outline: 2px solid rgba(130, 107, 75, .6);
+  outline-offset: -2px;
+}
+
+.bantani-repair-close #repair-reform .rc-reform__more summary::-webkit-details-marker {
+  display: none;
+}
+
+.bantani-repair-close #repair-reform .rc-reform__more-icon {
+  display: grid;
+  width: 1.875rem;
+  height: 1.875rem;
+  flex: 0 0 1.875rem;
+  place-items: center;
+  border: 1px solid rgba(130, 107, 75, .42);
+  color: var(--rc-gold);
+}
+
+.bantani-repair-close #repair-reform .rc-reform__more-icon svg {
+  width: 1.0625rem;
+  height: 1.0625rem;
+}
+
+.bantani-repair-close #repair-reform .rc-reform__more summary::after {
+  margin-left: auto;
+  color: var(--rc-gold);
+  content: "+";
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.bantani-repair-close #repair-reform .rc-reform__more[open] summary::after {
+  content: "-";
+}
+
+.bantani-repair-close #repair-reform .rc-reform__more-body {
+  display: grid;
+  gap: .75rem;
+  padding: clamp(1.25rem, 2.5vw, 2rem) clamp(1.125rem, 2vw, 1.5rem) clamp(1.75rem, 3vw, 2.5rem);
+  border-top: 1px solid rgba(130, 107, 75, .18);
+}
+
+.bantani-repair-close #repair-reform .rc-reform__more-body p {
+  max-width: 920px;
+  margin: 0;
+  color: var(--rc-muted);
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.bantani-repair-close #repair-reform .rc-reform__more-body p:first-child {
+  color: var(--rc-ink);
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.65;
+}
+
+.bantani-repair-close #repair-concerns article.rc-concern-card {
+  cursor: default;
+}
+
+.bantani-repair-close #repair-concerns article.rc-concern-card:is(:hover, :focus-visible) {
+  background: transparent;
+  box-shadow: none;
+  transform: none;
+}
+
+@media (min-width: 901px) {
+  .bantani-repair-close #repair-concerns article.rc-concern-card {
+    display: grid;
+    grid-template-columns: minmax(180px, .38fr) minmax(0, 1fr);
+    column-gap: 42px;
+    align-items: center;
+    min-height: 0;
+    padding: 19px 14px;
+  }
+
+  .bantani-repair-close #repair-concerns article.rc-concern-card h3 {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.45;
+  }
+
+  .bantani-repair-close #repair-concerns article.rc-concern-card p {
+    grid-column: 2;
+    grid-row: 1;
+    max-width: none;
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .bantani-repair-close #repair-reform .rc-reform__vertical-lead {
+    font-size: clamp(17px, 1.2vw, 19px);
+    line-height: 1.86;
+    letter-spacing: .1em;
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-card h3 {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-card {
+    grid-template-rows: auto auto;
+    gap: 12px;
+    align-content: start;
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-card h3,
+  .bantani-repair-close #repair-reform .rc-method-card p {
+    grid-column: 1;
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-card h3 {
+    grid-row: 1;
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-card p {
+    grid-row: 2;
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-card__mark {
+    display: inline-block;
+    flex: 0 0 auto;
+    width: 8px;
+    height: 8px;
+    margin: 0;
+    background: #b28247;
+    transform: rotate(45deg);
+  }
+
+  .bantani-repair-close #repair-small .rc-mini-card h3 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .bantani-repair-close #repair-small .rc-mini-card__mark {
+    display: inline-block;
+    flex: 0 0 auto;
+    width: 7px;
+    height: 7px;
+    margin: 0;
+    background: #b28247;
+    transform: rotate(45deg);
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-context {
+    grid-column: 2;
+    grid-row: 2;
+    display: block;
+    margin-top: 18px;
+    padding: 0;
+    border: 1px solid rgba(135, 108, 70, .18);
+    background: rgba(255, 255, 255, .3);
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-more summary {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 17px 22px;
+    color: #9b7440;
+    cursor: pointer;
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+    font-size: 17px;
+    line-height: 1.55;
+    list-style: none;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-more summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-more__summary-icon {
+    display: grid;
+    width: 30px;
+    height: 30px;
+    flex: 0 0 30px;
+    place-items: center;
+    border: 1px solid rgba(135, 108, 70, .32);
+    color: var(--rc-gold);
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-more__summary-icon svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-more summary::after {
+    margin-left: auto;
+    color: var(--rc-gold);
+    content: "+";
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.45em;
+    font-weight: 300;
+    line-height: 1;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-more[open] summary::after {
+    content: "−";
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-more > div {
+    padding: 0 22px 20px;
+  }
+
+  .bantani-repair-close #repair-small .rc-mini-card {
+    min-height: 0;
+    gap: 7px;
+    padding: 16px 0 17px;
+  }
+
+  .bantani-repair-close #repair-small .rc-mini-card h3 {
+    font-size: 20px;
+  }
+
+  .bantani-repair-close #repair-small .rc-side-example h3 {
+    max-width: none;
+    font-size: clamp(21px, 1.55vw, 24px);
+    line-height: 1.74;
+    letter-spacing: .04em;
+  }
+
+  .bantani-repair-close #repair-small .rc-side-example h3 span {
+    display: block;
+    white-space: nowrap;
+  }
+
+  .bantani-repair-close #repair-small .rc-mini-card p {
+    line-height: 1.7;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-layout {
+    grid-template-rows: auto;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-stack {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-stack .rc-maintenance-grid {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-stack .rc-maintenance-context {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-heading {
+    padding-bottom: 0;
+    border: 0;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-heading h2 {
+    max-width: none;
+    white-space: nowrap;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-grid {
+    border-top: 0;
+  }
+
+  .bantani-repair-close #repair-relocation {
+    padding-block: 78px 84px;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-relocation-heading {
+    padding-bottom: 0;
+    border: 0;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-relocation-heading h2 {
+    max-width: none;
+    white-space: nowrap;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-relocation-context,
+  .bantani-repair-close #repair-relocation .rc-note-panel {
+    display: none;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-relocation-layout {
+    grid-template-columns: minmax(330px, .78fr) minmax(0, 1.22fr);
+    gap: clamp(58px, 8vw, 110px);
+    margin-top: 54px;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-relocation-layout::before {
+    display: none;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-relocation-example[hidden] {
+    display: block;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: stretch;
+    min-height: 0;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-relocation-example__photo {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    background: url("../../assets/images/relocation-highres.png") center top / cover no-repeat;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-relocation__details {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-relocation-list-lead[hidden] {
+    display: block;
+    margin: 0 0 18px;
+    color: #9b7440;
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+    font-size: 19px;
+    line-height: 1.7;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-flow-panel {
+    border-top: 0;
+    column-gap: clamp(42px, 6vw, 82px);
+  }
+
+  .bantani-repair-close #repair-relocation .rc-flow-panel article {
+    min-height: 0;
+    gap: 7px;
+    padding: 16px 0 17px;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-flow-panel h3 {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 20px;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-flow-panel h3 .rc-mini-card__mark {
+    width: 8px;
+    height: 8px;
+    flex: 0 0 8px;
+    background: #b28247;
+    transform: rotate(45deg);
+  }
+
+  .bantani-repair-close #repair-relocation .rc-flow-panel p {
+    line-height: 1.7;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-relocation-more[hidden] {
+    display: block;
+    margin-top: 18px;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid rgba(135, 108, 70, .18);
+    background: rgba(255, 255, 255, .3);
+  }
+
+  .bantani-repair-close #repair-relocation .rc-relocation-more summary {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 17px 22px;
+    color: #9b7440;
+    cursor: pointer;
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+    font-size: 17px;
+    line-height: 1.55;
+    list-style: none;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-relocation-more summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-relocation-more__summary-icon {
+    display: grid;
+    width: 30px;
+    height: 30px;
+    flex: 0 0 30px;
+    place-items: center;
+    border: 1px solid rgba(135, 108, 70, .32);
+    color: var(--rc-gold);
+  }
+
+  .bantani-repair-close #repair-relocation .rc-relocation-more__summary-icon svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-relocation-more summary::after {
+    margin-left: auto;
+    color: var(--rc-gold);
+    content: "+";
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.45em;
+    font-weight: 300;
+    line-height: 1;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-relocation-more[open] summary::after {
+    content: "−";
+  }
+
+  .bantani-repair-close #repair-relocation .rc-relocation-more > div {
+    display: grid;
+    gap: 12px;
+    padding: 0 22px 20px;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-relocation-more p {
+    margin: 0;
+    color: var(--rc-muted);
+    font-size: 13px;
+    line-height: 1.85;
+  }
+
+  .bantani-repair-close #repair-closeout {
+    padding-block: 88px 92px;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout {
+    display: grid;
+    grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+    column-gap: clamp(58px, 8vw, 118px);
+    row-gap: 34px;
+    align-items: start;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__copy {
+    max-width: 540px;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__points {
+    max-width: none;
+    margin-top: 18px;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__points li {
+    display: grid;
+    grid-template-columns: 6px minmax(0, 1fr);
+    align-items: start;
+    column-gap: 13px;
+    padding: 12px 0;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__points li::before {
+    position: static;
+    width: 6px;
+    height: 6px;
+    margin-top: .55em;
+    transform: rotate(45deg);
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__photos {
+    max-width: none;
+    margin-top: 0;
+    padding-top: 8px;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__pair {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    align-items: start;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__pair figure:first-child {
+    padding-bottom: 0;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__pair img,
+  .bantani-repair-close #repair-closeout .rc-closeout__pair figure:last-child img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .bantani-repair-close .rc-section-motion-ready .rc-maintenance-heading,
+  .bantani-repair-close .rc-section-motion-ready .rc-relocation-heading,
+  .bantani-repair-close .rc-section-motion-ready .rc-closeout__copy,
+  .bantani-repair-close .rc-section-motion-ready .rc-side-example,
+  .bantani-repair-close .rc-section-motion-ready .rc-relocation-example,
+  .bantani-repair-close .rc-section-motion-ready .rc-relocation-list-lead,
+  .bantani-repair-close .rc-section-motion-ready .rc-mini-card,
+  .bantani-repair-close .rc-section-motion-ready .rc-flow-panel article,
+  .bantani-repair-close .rc-section-motion-ready .rc-maintenance-more,
+  .bantani-repair-close .rc-section-motion-ready .rc-relocation-more,
+  .bantani-repair-close .rc-section-motion-ready .rc-closeout__photos,
+  .bantani-repair-close .rc-section-motion-ready .rc-closeout__points li {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .78s cubic-bezier(.22, 1, .36, 1), transform .78s cubic-bezier(.22, 1, .36, 1);
+  }
+
+  .bantani-repair-close .rc-section-motion-ready .rc-relocation-example__photo {
+    transform: scale(1.025);
+    transition: transform 1.05s cubic-bezier(.22, 1, .36, 1);
+  }
+
+  .bantani-repair-close .is-section-motion-visible .rc-maintenance-heading,
+  .bantani-repair-close .is-section-motion-visible .rc-relocation-heading,
+  .bantani-repair-close .is-section-motion-visible .rc-closeout__copy,
+  .bantani-repair-close .is-section-motion-visible .rc-side-example,
+  .bantani-repair-close .is-section-motion-visible .rc-relocation-example,
+  .bantani-repair-close .is-section-motion-visible .rc-relocation-list-lead,
+  .bantani-repair-close .is-section-motion-visible .rc-mini-card,
+  .bantani-repair-close .is-section-motion-visible .rc-flow-panel article,
+  .bantani-repair-close .is-section-motion-visible .rc-maintenance-more,
+  .bantani-repair-close .is-section-motion-visible .rc-relocation-more,
+  .bantani-repair-close .is-section-motion-visible .rc-closeout__photos,
+  .bantani-repair-close .is-section-motion-visible .rc-closeout__points li {
+    opacity: 1;
+    transform: none;
+  }
+
+  .bantani-repair-close .is-section-motion-visible .rc-relocation-example__photo {
+    transform: none;
+  }
+
+  .bantani-repair-close .rc-section-motion-ready.is-section-motion-visible .rc-maintenance-heading,
+  .bantani-repair-close .rc-section-motion-ready.is-section-motion-visible .rc-relocation-heading,
+  .bantani-repair-close .rc-section-motion-ready.is-section-motion-visible .rc-closeout__copy {
+    transition-delay: .06s;
+  }
+
+  .bantani-repair-close .rc-section-motion-ready.is-section-motion-visible .rc-side-example,
+  .bantani-repair-close .rc-section-motion-ready.is-section-motion-visible .rc-relocation-example,
+  .bantani-repair-close .rc-section-motion-ready.is-section-motion-visible .rc-relocation-list-lead {
+    transition-delay: .18s;
+  }
+
+  .bantani-repair-close .rc-section-motion-ready.is-section-motion-visible .rc-mini-card:nth-child(1),
+  .bantani-repair-close .rc-section-motion-ready.is-section-motion-visible .rc-flow-panel article:nth-child(1) { transition-delay: .28s; }
+  .bantani-repair-close .rc-section-motion-ready.is-section-motion-visible .rc-mini-card:nth-child(2),
+  .bantani-repair-close .rc-section-motion-ready.is-section-motion-visible .rc-flow-panel article:nth-child(2) { transition-delay: .4s; }
+  .bantani-repair-close .rc-section-motion-ready.is-section-motion-visible .rc-mini-card:nth-child(3),
+  .bantani-repair-close .rc-section-motion-ready.is-section-motion-visible .rc-flow-panel article:nth-child(3) { transition-delay: .52s; }
+  .bantani-repair-close .rc-section-motion-ready.is-section-motion-visible .rc-mini-card:nth-child(4),
+  .bantani-repair-close .rc-section-motion-ready.is-section-motion-visible .rc-flow-panel article:nth-child(4) { transition-delay: .64s; }
+  .bantani-repair-close .rc-section-motion-ready.is-section-motion-visible .rc-mini-card:nth-child(5) { transition-delay: .76s; }
+  .bantani-repair-close .rc-section-motion-ready.is-section-motion-visible .rc-mini-card:nth-child(6) { transition-delay: .88s; }
+  .bantani-repair-close .rc-section-motion-ready.is-section-motion-visible .rc-maintenance-more,
+  .bantani-repair-close .rc-section-motion-ready.is-section-motion-visible .rc-relocation-more,
+  .bantani-repair-close .rc-section-motion-ready.is-section-motion-visible .rc-closeout__photos { transition-delay: .74s; }
+  .bantani-repair-close .rc-section-motion-ready.is-section-motion-visible .rc-closeout__points li:nth-child(1) { transition-delay: .78s; }
+  .bantani-repair-close .rc-section-motion-ready.is-section-motion-visible .rc-closeout__points li:nth-child(2) { transition-delay: .9s; }
+  .bantani-repair-close .rc-section-motion-ready.is-section-motion-visible .rc-closeout__points li:nth-child(3) { transition-delay: 1.02s; }
+}
+
+/* Keep the responsive system last so it cleanly supersedes the original base grid. */
+@media (max-width: 960px) {
+  .bantani-repair-close .rc-container { width: min(100% - 48px, 760px); }
+  .bantani-repair-close .rc-chapter { padding-block: 76px; }
+
+  .bantani-repair-close #repair-reform .rc-split-heading {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-reform__vertical-lead {
+    position: static;
+    margin: 0;
+    writing-mode: horizontal-tb;
+    font-size: 17px;
+    line-height: 1.8;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concerns__photo { aspect-ratio: 4 / 5; }
+
+  .bantani-repair-close #repair-small .rc-mini-card,
+  .bantani-repair-close #repair-relocation .rc-flow-panel article {
+    min-height: 0;
+    padding: 20px 0;
+    border: 0;
+    border-bottom: 1px solid rgba(135, 108, 70, .2);
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .bantani-repair-close .rc-before-after {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    margin-top: 30px;
+  }
+
+  .bantani-repair-close .rc-before-after__photos {
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .bantani-repair-close .rc-before-after__photos img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .bantani-repair-close .rc-method-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0 20px;
+    margin-top: 28px;
+    border-top: 1px solid rgba(135, 108, 70, .2);
+  }
+
+  .bantani-repair-close .rc-method-card {
+    display: grid;
+    gap: 9px;
+    min-height: 0;
+    padding: 20px 0;
+    border: 0;
+    border-bottom: 1px solid rgba(135, 108, 70, .2);
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .bantani-repair-close .rc-method-card h3 { margin: 0; font-size: 17px; line-height: 1.55; }
+  .bantani-repair-close .rc-method-card p { margin: 0; font-size: 12px; line-height: 1.75; }
+
+  .bantani-repair-close .rc-note-panel { padding: 18px 20px; border-left-width: 2px; }
+  .bantani-repair-close .rc-works-action { justify-content: flex-end; margin-top: 30px; }
+}
+
+@media (max-width: 767px) {
+  .bantani-repair-close .rc-container { width: min(100% - 32px, 540px); }
+  .bantani-repair-close .rc-chapter { padding-block: 62px; }
+  .bantani-repair-close .rc-method-grid { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .bantani-repair-close .rc-method-card { padding-block: 18px; }
+  .bantani-repair-close #repair-small .rc-mini-card,
+  .bantani-repair-close #repair-relocation .rc-flow-panel article { padding-block: 18px; }
+  .bantani-repair-close .rc-method-card h3 { font-size: 19px; }
+  .bantani-repair-close .rc-before-after__photos { gap: 8px; }
+  .bantani-repair-close .rc-before-after__arrow { font-size: 17px; }
+  .bantani-repair-close .rc-works-action { justify-content: stretch; }
+  .bantani-repair-close .rc-works-button { width: 100%; justify-content: space-between; }
+}
+
+/* Responsive layout rebuilt from the finalized desktop composition. */
+@media (max-width: 960px) {
+  .bantani-repair-close {
+    font-size: 15px;
+    line-height: 1.82;
+  }
+
+  .bantani-repair-close .rc-container {
+    width: min(100% - 48px, 760px);
+  }
+
+  .bantani-repair-close .rc-chapter {
+    padding-block: 76px;
+  }
+
+  .bantani-repair-close .rc-split-heading,
+  .bantani-repair-close #repair-small .rc-maintenance-heading,
+  .bantani-repair-close #repair-relocation .rc-relocation-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .bantani-repair-close .rc-split-heading h2,
+  .bantani-repair-close .rc-center-heading h2,
+  .bantani-repair-close #repair-small .rc-maintenance-heading h2,
+  .bantani-repair-close #repair-relocation .rc-relocation-heading h2,
+  .bantani-repair-close .rc-closeout__copy h2 {
+    margin-bottom: 0;
+    font-size: clamp(28px, 4.4vw, 34px);
+    line-height: 1.5;
+    letter-spacing: .06em;
+  }
+
+  .bantani-repair-close .rc-section-kicker {
+    margin-bottom: 10px;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-split-heading {
+    grid-template-columns: minmax(0, 1fr) minmax(160px, 26vw);
+    gap: 28px;
+    align-items: start;
+    padding-bottom: 26px;
+    border-bottom: 1px solid rgba(135, 108, 70, .2);
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concerns__photo {
+    display: block;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    aspect-ratio: 4 / 5;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concerns__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concerns__photo figcaption {
+    display: none;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 28px;
+    margin-top: 28px;
+    border-top: 1px solid rgba(135, 108, 70, .2);
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card,
+  .bantani-repair-close .rc-method-card,
+  .bantani-repair-close .rc-mini-card,
+  .bantani-repair-close .rc-flow-panel article {
+    min-height: 0;
+    padding: 20px 0;
+    border: 0;
+    border-bottom: 1px solid rgba(135, 108, 70, .2);
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card {
+    display: grid;
+    gap: 8px;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card h3,
+  .bantani-repair-close .rc-method-card h3,
+  .bantani-repair-close .rc-mini-card h3,
+  .bantani-repair-close .rc-flow-panel h3 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.55;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card p,
+  .bantani-repair-close .rc-method-card p,
+  .bantani-repair-close .rc-mini-card p,
+  .bantani-repair-close .rc-flow-panel p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .bantani-repair-close #repair-reform .rc-split-heading {
+    gap: 12px;
+  }
+
+  .bantani-repair-close #repair-reform .rc-reform__vertical-lead {
+    margin: 0;
+    writing-mode: horizontal-tb;
+    font-size: 17px;
+    line-height: 1.8;
+  }
+
+  .bantani-repair-close .rc-before-after {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    margin-top: 30px;
+  }
+
+  .bantani-repair-close .rc-before-after__photos {
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .bantani-repair-close .rc-before-after__photos img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .bantani-repair-close .rc-method-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0 20px;
+    margin-top: 28px;
+    border-top: 1px solid rgba(135, 108, 70, .2);
+  }
+
+  .bantani-repair-close .rc-method-card {
+    display: grid;
+    gap: 9px;
+  }
+
+  .bantani-repair-close .rc-method-card h3 {
+    font-size: 17px;
+  }
+
+  .bantani-repair-close .rc-method-card p {
+    font-size: 12px;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 30px;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-stack {
+    order: 2;
+  }
+
+  .bantani-repair-close #repair-small .rc-side-example {
+    order: 1;
+    gap: 14px;
+    padding: 28px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .bantani-repair-close #repair-small .rc-side-example h3 {
+    margin: 0;
+    font-size: 23px;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 26px;
+    border-top: 1px solid rgba(135, 108, 70, .2);
+  }
+
+  .bantani-repair-close #repair-small .rc-mini-card {
+    display: grid;
+    gap: 8px;
+  }
+
+  .bantani-repair-close #repair-small .rc-mini-card h3,
+  .bantani-repair-close #repair-relocation .rc-flow-panel h3 {
+    font-size: 18px;
+  }
+
+  .bantani-repair-close #repair-small .rc-maintenance-more,
+  .bantani-repair-close #repair-relocation .rc-note-panel {
+    margin-top: 26px;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-relocation-context {
+    display: grid;
+    gap: 14px;
+    margin-top: 22px;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-relocation-layout {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-flow-panel {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 26px;
+    margin-top: 0;
+    border-top: 1px solid rgba(135, 108, 70, .2);
+  }
+
+  .bantani-repair-close #repair-relocation .rc-flow-panel article {
+    display: grid;
+    gap: 8px;
+  }
+
+  .bantani-repair-close .rc-note-panel {
+    padding: 18px 20px;
+    border-left-width: 2px;
+  }
+
+  .bantani-repair-close .rc-works-action {
+    justify-content: flex-end;
+    margin-top: 30px;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout {
+    grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+    gap: 30px;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__copy {
+    gap: 13px;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__copy > p:not(.rc-section-kicker) {
+    margin: 0;
+    font-size: 13px;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__photos {
+    gap: 18px;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__pair {
+    gap: 12px;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__pair img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__points {
+    gap: 0;
+    margin: 0;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__points li {
+    display: grid;
+    grid-template-columns: 6px minmax(0, 1fr);
+    gap: 11px;
+    padding: 10px 0;
+    font-size: 13px;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__points li::before {
+    position: static;
+    width: 6px;
+    height: 6px;
+    margin-top: .62em;
+    border-radius: 0;
+    transform: rotate(45deg);
+  }
+}
+
+@media (max-width: 767px) {
+  .bantani-repair-close .rc-container {
+    width: min(100% - 32px, 540px);
+  }
+
+  .bantani-repair-close .rc-chapter {
+    padding-block: 62px;
+  }
+
+  .bantani-repair-close .rc-split-heading h2,
+  .bantani-repair-close .rc-center-heading h2,
+  .bantani-repair-close #repair-small .rc-maintenance-heading h2,
+  .bantani-repair-close #repair-relocation .rc-relocation-heading h2,
+  .bantani-repair-close .rc-closeout__copy h2 {
+    font-size: 28px;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-split-heading {
+    grid-template-columns: minmax(0, 1fr) 100px;
+    gap: 20px;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-grid,
+  .bantani-repair-close #repair-small .rc-maintenance-grid,
+  .bantani-repair-close #repair-relocation .rc-flow-panel,
+  .bantani-repair-close .rc-method-grid,
+  .bantani-repair-close #repair-closeout .rc-closeout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card,
+  .bantani-repair-close .rc-method-card,
+  .bantani-repair-close .rc-mini-card,
+  .bantani-repair-close .rc-flow-panel article {
+    padding-block: 18px;
+  }
+
+  .bantani-repair-close .rc-method-grid {
+    gap: 0;
+  }
+
+  .bantani-repair-close .rc-method-card h3,
+  .bantani-repair-close #repair-small .rc-mini-card h3,
+  .bantani-repair-close #repair-relocation .rc-flow-panel h3 {
+    font-size: 19px;
+  }
+
+  .bantani-repair-close .rc-before-after__photos {
+    gap: 8px;
+  }
+
+  .bantani-repair-close .rc-before-after__arrow {
+    font-size: 17px;
+  }
+
+  .bantani-repair-close #repair-small .rc-side-example {
+    padding: 24px;
+  }
+
+  .bantani-repair-close #repair-small .rc-side-example h3 {
+    font-size: 21px;
+    line-height: 1.65;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout {
+    gap: 28px;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__copy > p:not(.rc-section-kicker) {
+    font-size: 14px;
+  }
+
+  .bantani-repair-close .rc-works-action {
+    justify-content: stretch;
+  }
+
+  .bantani-repair-close .rc-works-button {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+/* Match the lower-page mobile rhythm used throughout the site. */
+@media (max-width: 960px) {
+  .lower-page--repair-close .lower-page-guide__inner {
+    width: min(100% - 48px, 640px);
+    grid-template-columns: 1fr;
+    gap: 28px;
+    min-height: 0;
+    padding: 48px 0;
+  }
+
+  .lower-page--repair-close .lower-page-guide__title {
+    font-size: 27px;
+    line-height: 1.5;
+  }
+
+  .lower-page--repair-close .lower-page-guide__description {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .lower-page--repair-close .lower-page-guide__links--two {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 18px;
+    margin-top: 2px;
+    border-top: 1px solid rgba(83, 69, 52, .16);
+  }
+
+  .lower-page--repair-close .lower-page-guide__link {
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 6px 12px;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(83, 69, 52, .16);
+  }
+
+  .lower-page--repair-close .lower-page-guide__link-photo {
+    display: block;
+    grid-row: span 2;
+    width: 72px;
+    height: 72px;
+    margin: 0;
+  }
+
+  .lower-page--repair-close .lower-page-guide__link-title {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .lower-page--repair-close .lower-page-guide__link-description {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .lower-page--repair-close .lower-page-guide__arrow { display: none; }
+
+  .bantani-repair-close .rc-chapter { padding-block: 72px; }
+  .bantani-repair-close .rc-section-lead { font-size: 16px; line-height: 1.85; }
+
+  .bantani-repair-close #repair-reform .rc-method-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .bantani-repair-close #repair-reform .rc-method-card {
+    grid-template-columns: 1fr;
+    gap: 9px;
+    padding: 20px 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(135, 108, 70, .2);
+    border-left: 0;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-split-heading { align-items: center; }
+}
+
+@media (max-width: 767px) {
+  .lower-page--repair-close .lower-page-guide__inner {
+    width: min(100% - 48px, 520px);
+    gap: 24px;
+    padding-block: 40px;
+  }
+
+  .lower-page--repair-close .lower-page-guide__links--two {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .lower-page--repair-close .lower-page-guide__link {
+    grid-template-columns: minmax(0, 1fr);
+    padding-right: 0;
+  }
+
+  .lower-page--repair-close .lower-page-guide__link-photo { display: none; }
+  .lower-page--repair-close .lower-page-guide__link-title { font-size: 17px; }
+
+  .bantani-repair-close .rc-container { width: min(100% - 48px, 640px); }
+  .bantani-repair-close .rc-chapter { padding-block: 72px; }
+  .bantani-repair-close .rc-split-heading h2,
+  .bantani-repair-close .rc-center-heading h2,
+  .bantani-repair-close #repair-small .rc-maintenance-heading h2,
+  .bantani-repair-close #repair-relocation .rc-relocation-heading h2,
+  .bantani-repair-close .rc-closeout__copy h2 { font-size: clamp(27px, 7.2vw, 32px); }
+
+  .bantani-repair-close #repair-concerns .rc-concern-card,
+  .bantani-repair-close .rc-method-card,
+  .bantani-repair-close .rc-mini-card,
+  .bantani-repair-close .rc-flow-panel article { padding-block: 20px; }
+}
+
+@media (max-width: 390px) {
+  .lower-page--repair-close .lower-page-guide__inner,
+  .bantani-repair-close .rc-container { width: min(100% - 32px, 620px); }
+
+  .bantani-repair-close .rc-chapter { padding-block: 64px; }
+}
+
+/* Shared works CTA: match the build page in every section. */
+.bantani-repair-close .rc-works-action {
+  margin-top: 30px;
+  text-align: right;
+}
+
+.bantani-repair-close .rc-works-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  min-height: 48px;
+  gap: 30px;
+  padding: 0 20px;
+  border: 1px solid rgba(74, 61, 47, .28);
+  color: #4b4034;
+  background: transparent;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-decoration: none;
+  transition: color .24s ease, background .24s ease, border-color .24s ease, transform .24s ease;
+}
+
+.bantani-repair-close .rc-works-button > span:last-child { transition: transform .24s ease; }
+
+.bantani-repair-close .rc-works-button:is(:hover, :focus-visible) {
+  color: #2f2821;
+  background: rgba(255, 255, 255, .34);
+  border-color: rgba(74, 61, 47, .44);
+  transform: translateY(-1px);
+}
+
+.bantani-repair-close .rc-works-button:is(:hover, :focus-visible) > span:last-child { transform: translateX(4px); }
+
+.bantani-repair-close .rc-works-action--light .rc-works-button {
+  border-color: rgba(223, 207, 178, .46);
+  color: #dfcfb2;
+}
+
+.bantani-repair-close .rc-works-action--light .rc-works-button:is(:hover, :focus-visible) {
+  color: #fff8ef;
+  background: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 248, 239, .72);
+}
+
+.bantani-repair-close .rc-accordion-label--mobile { display: none; }
+
+@media (max-width: 767px) {
+  .bantani-repair-close .rc-works-action { text-align: left; }
+  .bantani-repair-close .rc-works-button { width: fit-content; }
+  .bantani-repair-close .rc-accordion-label--desktop { display: none; }
+  .bantani-repair-close .rc-accordion-label--mobile { display: inline; }
+
+  .bantani-repair-close :is(.rc-concerns__more, .rc-reform__more, .rc-maintenance-more, .rc-relocation-more) summary {
+    display: grid;
+    grid-template-columns: 24px minmax(0, 1fr) auto;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .bantani-repair-close :is(.rc-concerns__more-icon, .rc-reform__more-icon, .rc-maintenance-more__summary-icon, .rc-relocation-more__summary-icon) {
+    display: grid;
+    width: 22px;
+    height: 22px;
+    place-items: center;
+  }
+
+  .bantani-repair-close :is(.rc-concerns__more-icon, .rc-reform__more-icon, .rc-maintenance-more__summary-icon, .rc-relocation-more__summary-icon) svg {
+    display: block;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Keep the lower repair chapters on the same mobile type scale as ABOUT and Build. */
+@media (max-width: 960px) {
+  .bantani-repair-close :is(.rc-split-heading h2, .rc-center-heading h2, .rc-maintenance-heading h2, .rc-relocation-heading h2, .rc-closeout__copy h2),
+  .bantani-repair-close :is(.rc-concern-card h3, .rc-method-card h3, .rc-mini-card h3, .rc-flow-panel h3, .rc-side-example h3, .rc-before-after__copy h3) {
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+    font-weight: 500;
+  }
+
+  .bantani-repair-close :is(.rc-split-heading h2, .rc-center-heading h2, .rc-maintenance-heading h2, .rc-relocation-heading h2, .rc-closeout__copy h2) {
+    line-height: 1.42;
+    letter-spacing: .06em;
+  }
+
+  .bantani-repair-close :is(#repair-small, #repair-relocation, #repair-closeout) .rc-section-kicker {
+    margin: 0 0 12px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: .14em;
+  }
+
+  .bantani-repair-close :is(#repair-small, #repair-relocation) :is(.rc-mini-card h3, .rc-flow-panel h3) {
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.55;
+    letter-spacing: .05em;
+  }
+
+  .bantani-repair-close :is(#repair-small, #repair-relocation) :is(.rc-mini-card p, .rc-flow-panel p),
+  .bantani-repair-close #repair-closeout .rc-closeout__copy > p:not(.rc-section-kicker):not(.rc-section-lead),
+  .bantani-repair-close #repair-closeout .rc-closeout__points li {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  .bantani-repair-close #repair-closeout .rc-closeout__copy .rc-section-lead {
+    font-size: 16px;
+    line-height: 1.85;
+  }
+
+  .bantani-repair-close :is(.rc-maintenance-more, .rc-relocation-more) {
+    display: block;
+    overflow: hidden;
+    margin-top: 26px;
+    padding: 0;
+    border: 1px solid rgba(135, 108, 70, .24);
+    background: rgba(255, 253, 248, .46);
+  }
+
+  .bantani-repair-close #repair-relocation .rc-relocation-more[hidden] { display: block; }
+
+  .bantani-repair-close :is(.rc-maintenance-more, .rc-relocation-more) summary {
+    display: grid;
+    grid-template-columns: 24px minmax(0, 1fr) auto;
+    gap: 12px;
+    align-items: center;
+    padding: 16px 18px;
+    color: var(--rc-ink);
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.55;
+    letter-spacing: .05em;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .bantani-repair-close :is(.rc-maintenance-more, .rc-relocation-more) summary::-webkit-details-marker { display: none; }
+
+  .bantani-repair-close :is(.rc-maintenance-more__summary-icon, .rc-relocation-more__summary-icon) {
+    display: grid;
+    width: 22px;
+    height: 22px;
+    place-items: center;
+    color: var(--rc-gold);
+  }
+
+  .bantani-repair-close :is(.rc-maintenance-more, .rc-relocation-more) summary::after {
+    color: var(--rc-gold);
+    content: "+";
+    font-family: Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1;
+  }
+
+  .bantani-repair-close :is(.rc-maintenance-more, .rc-relocation-more)[open] summary::after { content: "−"; }
+
+  .bantani-repair-close :is(.rc-maintenance-more, .rc-relocation-more) > div {
+    display: grid;
+    gap: 10px;
+    padding: 0 18px 20px;
+    border-top: 1px solid rgba(135, 108, 70, .18);
+  }
+
+  .bantani-repair-close :is(.rc-maintenance-more, .rc-relocation-more) p {
+    margin: 0;
+    color: var(--rc-muted);
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  .bantani-repair-close #repair-relocation .rc-relocation-context > div,
+  .bantani-repair-close #repair-relocation .rc-note-panel { display: none; }
+}
+
+@media (max-width: 1400px) {
+  .bantani-repair-close #repair-concerns {
+    background-color: #fff;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)),
+      url("../../assets/images/repair/grave-maintenance-hands.png");
+    background-position: center, center right;
+    background-repeat: no-repeat;
+    background-size: cover, cover;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-split-heading {
+    display: block;
+    padding-bottom: 18px;
+    border-bottom: 0;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-chapter__content {
+    width: min(100% - 48px, 760px);
+    padding-right: 0;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concerns__photo {
+    display: none !important;
+  }
+
+  .bantani-repair-close #repair-concerns .rc-concern-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 32px;
+    margin-top: 0;
+    border-top-color: rgba(135, 108, 70, .18);
+  }
+
+  .bantani-repair-close #repair-concerns article.rc-concern-card {
+    display: block !important;
+    min-height: 0;
+    padding: 20px 0;
+  }
+
+  .bantani-repair-close #repair-concerns article.rc-concern-card h3 {
+    display: block !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    margin: 0 !important;
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed !important;
+  }
+
+  .bantani-repair-close #repair-concerns article.rc-concern-card p {
+    display: block !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    margin: 8px 0 0 !important;
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .bantani-repair-close #repair-concerns .rc-concern-grid { grid-template-columns: minmax(0, 1fr) !important; }
+
+  .bantani-repair-close #repair-concerns .rc-split-heading h2 {
+    font-size: clamp(23px, 6.7vw, 28px);
+    letter-spacing: .04em;
+    white-space: nowrap;
+  }
+}
+
+/* Keep the repair-category mark visible at every mobile width. */
+@media (max-width: 960px) {
+  .bantani-repair-close :is(#repair-reform .rc-method-card, #repair-small .rc-mini-card, #repair-relocation .rc-flow-panel article) h3 {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+  }
+
+  .bantani-repair-close :is(#repair-reform .rc-method-card__mark, #repair-small .rc-mini-card__mark, #repair-relocation .rc-flow-panel h3 .rc-mini-card__mark) {
+    display: inline-block !important;
+    flex: 0 0 7px;
+    width: 7px;
+    height: 7px;
+    margin: 0;
+    background: #b28247;
+    transform: rotate(45deg);
+  }
+}

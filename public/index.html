@@ -1,52 +1,309 @@
 <!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Web担当者くん 動作確認サイト</title>
-  <meta name="description" content="番谷石材店 Web担当者くんの更新・公開・ロールバック動作を確認するためのダミーサイトです。">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <title>番谷石材店｜能登町のお墓づくりと石の相談</title>
+  <meta name="description" content="石川県能登町の番谷石材店。お墓の建立、リフォーム、クリーニング、追加彫り、墓じまい、墓地のご案内、表札や庭石などをご相談いただけます。">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://bantani.jp/">
+  <link rel="icon" type="image/svg+xml" href="assets/images/bantani_symbol_gold.svg">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="番谷石材店">
+  <meta property="og:title" content="番谷石材店｜能登町のお墓づくりと石の相談">
+  <meta property="og:description" content="石川県能登町の番谷石材店。お墓の建立、リフォーム、クリーニング、追加彫り、墓じまい、墓地のご案内、表札や庭石などをご相談いただけます。">
+  <meta property="og:url" content="https://bantani.jp/">
+  <meta property="og:image" content="https://bantani.jp/assets/images/ogp-bantani.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="番谷石材店｜能登町のお墓づくりと石の相談">
+  <meta name="twitter:description" content="石川県能登町の番谷石材店。お墓の建立、リフォーム、クリーニング、追加彫り、墓じまい、墓地のご案内、表札や庭石などをご相談いただけます。">
+  <meta name="twitter:image" content="https://bantani.jp/assets/images/ogp-bantani.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "番谷石材店",
+    "url": "https://bantani.jp/",
+    "telephone": "+81-768-62-3845",
+    "email": "bantani-stone@watch.ocn.ne.jp",
+    "image": "https://bantani.jp/assets/images/ogp-bantani.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "postalCode": "927-0433",
+      "addressRegion": "石川県",
+      "addressLocality": "鳳珠郡能登町",
+      "streetAddress": "宇出津山分39-543",
+      "addressCountry": "JP"
+    }
+  }
+  </script>
+  <link rel="preload" as="image" href="assets/images/hero-slide-01-pc.webp" imagesrcset="assets/images/hero-slide-01-mobile.webp 760w, assets/images/hero-slide-01-pc.webp 1440w" imagesizes="100vw">
+  <link rel="preload" as="image" href="assets/images/hero-slide-02-pc.webp" imagesrcset="assets/images/hero-slide-02-mobile.webp 760w, assets/images/hero-slide-02-pc.webp 1440w" imagesizes="100vw">
+  <link rel="preload" as="image" href="assets/images/hero-slide-03-pc.webp" imagesrcset="assets/images/hero-slide-03-mobile.webp 760w, assets/images/hero-slide-03-pc.webp 1440w" imagesizes="100vw">
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/home.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#top">TEST STONE</a>
-    <nav><a href="#about">概要</a><a href="#status">状態</a></nav>
-  </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">WEB TANTOUSHA TEST</p>
-        <h1 data-edit-id="hero-title">石と暮らしを、静かにつなぐ。</h1>
-        <p data-edit-id="hero-lead">これはWeb担当者くんの動作確認専用ダミーサイトです。文章・画像・CSS・JavaScriptの変更を安全に試せます。</p>
-        <button id="testButton" type="button">JavaScript動作確認</button>
+<a class="skip-link" href="#main">本文へ移動</a>
+<header class="site-header is-over-hero" data-site-header>
+  <div class="site-header__inner">
+    <a class="site-header__brand" href="index.html" aria-label="番谷石材店 トップページ">
+  <img class="site-header__logo site-header__logo--dark" src="assets/images/bantani_lockup_gold_black.svg" alt="番谷石材店" width="500" height="140">
+  <img class="site-header__logo site-header__logo--light" src="assets/images/bantani_lockup_white.svg" alt="" width="500" height="140">
+</a>
+    <nav class="site-header__nav" aria-label="メインメニュー">
+          <a href="index.html#home-top">トップ</a>
+          <a href="pages/about/index.html">番谷について</a>
+          <a href="pages/build-grave/index.html">お墓を建てる</a>
+          <a href="pages/repair-close/index.html">直す／整理</a>
+          <a href="pages/works/index.html">施工事例</a>
+          <a href="pages/knowledge/index.html">お墓の知識</a>
+          <a href="pages/contact/index.html">お問い合わせ</a>
+    </nav>
+    <div class="site-header__actions">
+      <a class="site-header__tel" href="tel:0768623845"><span>お電話</span><strong>0768-62-3845</strong></a>
+      <a class="site-header__contact" href="pages/contact/index.html"><span>お問い合わせ</span><span aria-hidden="true">→</span></a>
+    </div>
+    <button class="site-menu-button" type="button" aria-expanded="false" aria-controls="site-drawer" data-menu-button>
+      <span class="site-menu-button__lines" aria-hidden="true"></span><span>メニュー</span>
+    </button>
+  </div>
+</header>
+<div class="site-drawer" id="site-drawer" hidden data-site-drawer>
+  <nav class="site-drawer__nav" aria-label="スマートフォンメニュー">
+        <a href="index.html#home-top"><span>トップ</span><span aria-hidden="true">→</span></a>
+        <a href="pages/about/index.html"><span>私たちについて</span><span aria-hidden="true">→</span></a>
+        <a href="pages/build-grave/index.html"><span>建てる</span><span aria-hidden="true">→</span></a>
+        <a href="pages/repair-close/index.html"><span>直す・整理</span><span aria-hidden="true">→</span></a>
+        <a href="pages/works/index.html"><span>施工事例</span><span aria-hidden="true">→</span></a>
+        <a href="pages/knowledge/index.html"><span>お墓の知識</span><span aria-hidden="true">→</span></a>
+        <a href="pages/contact/index.html"><span>お問い合わせ</span><span aria-hidden="true">→</span></a>
+  </nav>
+  <div class="site-drawer__contact-block">
+    <a class="site-drawer__tel" href="tel:0768623845"><span>お電話でのご相談</span><strong>0768-62-3845</strong></a>
+    <a class="site-drawer__contact" href="pages/contact/index.html"><span>お問い合わせ</span><span aria-hidden="true">→</span></a>
+  </div>
+</div>
+<div class="bantani-home">
+  <main id="main">
+    <section class="hm-hero hm-hero--slides" id="home-top" data-header-hero data-hm-slide-active="0">
+      <div class="hm-hero__stage" aria-label="番谷石材店の仕事写真">
+        <picture class="hm-hero__slide is-active" data-hm-slide="0" aria-hidden="false">
+          <source media="(max-width: 760px)" srcset="assets/images/hero-slide-01-mobile.webp">
+          <img src="assets/images/hero-slide-01-pc.webp" alt="石材を据えながら現場を確認する番谷石材店の仕事" width="2400" height="1600" fetchpriority="high">
+        </picture>
+        <picture class="hm-hero__slide" data-hm-slide="1" aria-hidden="true">
+          <source media="(max-width: 760px)" srcset="assets/images/hero-slide-02-mobile.webp">
+          <img src="assets/images/hero-slide-02-pc.webp" alt="石材と施工現場の気配が伝わる受領写真" width="2400" height="1600" loading="eager">
+        </picture>
+        <picture class="hm-hero__slide" data-hm-slide="2" aria-hidden="true">
+          <source media="(max-width: 760px)" srcset="assets/images/hero-slide-03-mobile.webp">
+          <img src="assets/images/hero-slide-03-pc.webp" alt="石材を扱う現場の仕事の様子" width="2400" height="1600" loading="eager">
+        </picture>
       </div>
-      <figure class="hero-media">
-        <img src="assets/images/managed/top-hero.webp" alt="動作確認用のダミー写真" width="1200" height="800">
-      </figure>
+      <div class="hm-hero__top-shade" aria-hidden="true"></div>
+      <div class="hm-hero__tone" aria-hidden="true"></div>
+      <div class="hm-hero__local-shade" aria-hidden="true"></div>
+      <div class="hm-container hm-hero__inner">
+        <div class="hm-hero__copy">
+          <p class="hm-hero__region">石川県能登町の石材店</p>
+          <h1 class="hm-hero__title" aria-label="想いを カタチに。">
+            <span class="hm-hero__title-col hm-hero__title-col--right">想いを</span>
+            <span class="hm-hero__title-col hm-hero__title-col--left">カタチに。</span>
+          </h1>
+        </div>
+      </div>
+      <div class="hm-hero__bottom">
+        <div class="hm-hero__lead-block">
+          <p class="hm-hero__lead">お墓は、大切な人への感謝や、ご家族の想いを受け止める場所だと思っています。</p>
+          <p class="hm-hero__micro">私は、お話を伺いながら、一つひとつ丁寧にお手伝いしています。</p>
+        </div>
+        <div class="hm-actions hm-hero__actions">
+          <a class="hm-text-link hm-hero__secondary" href="pages/repair-close/index.html">直す・整理する<span aria-hidden="true">&rarr;</span></a>
+          <a class="hm-btn hm-btn--dark hm-hero__primary" href="pages/build-grave/index.html">建てる<span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+      <div class="hm-hero__work-note" aria-hidden="true">
+        <span class="hm-hero__work-heading">石の仕事</span>
+        <span class="hm-hero__work-items">
+          <b>建立</b>
+          <b class="is-emphasis">修理</b>
+          <b>墓じまい</b>
+          <b>お墓のご相談</b>
+        </span>
+      </div>
     </section>
 
-    <section id="about" class="section-grid">
-      <div>
-        <p class="eyebrow">ABOUT</p>
-        <h2 data-edit-id="about-title">変更対象が見つけやすい構造</h2>
-        <p data-edit-id="about-body">文章変更では data-edit-id を目印にできます。画像は固定スロット方式で、HTMLを触らずに差し替える想定です。</p>
+    <section class="hm-section hm-about hm-about--final" id="home-about">
+      <div class="hm-container hm-about-final__shell">
+        <div class="hm-about-final__content">
+          <header class="hm-about-final__head">
+            <p class="hm-kicker">ABOUT US</p>
+            <h2>番谷石材店について</h2>
+          </header>
+          <div class="hm-about-final__body">
+            <p>これまで、施工させていただいたお客様からのご紹介をきっかけに、ご相談をいただいてきました。</p>
+            <p>こちらからしつこく勧誘したり、突然ご自宅へ伺ったりすることはありません。お墓や石のことで分からないことがあれば、まずはお話をお聞かせください。</p>
+            <a class="hm-btn hm-btn--outline hm-about-final__link" href="pages/about/index.html">
+              <span>私たちについて</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+        </div>
+        <figure class="hm-about-final__photo">
+          <img src="assets/images/about-consultation-noto-a.webp" alt="能登のご自宅で図面と石材サンプルを見ながらお墓の相談をする様子" width="2000" height="2500" loading="lazy">
+        </figure>
+        <p class="hm-about-final__message" aria-label="ご縁を大切に、能登で石の仕事を続けています。">
+          <span class="hm-about-final__message-col hm-about-final__message-col--right">ご縁を大切に、</span>
+          <span class="hm-about-final__message-col hm-about-final__message-col--left">能登で石の仕事を続けています。</span>
+        </p>
       </div>
-      <img class="sub-image" src="assets/images/managed/about-main.webp" alt="サブ画像" width="1200" height="800">
     </section>
 
-    <section id="status" class="status-panel">
-      <p class="eyebrow">TEST STATUS</p>
-      <h2>現在のダミー状態</h2>
-      <p id="jsStatus">JavaScriptはまだ操作されていません。</p>
-      <div class="test-card">
-        <strong>変更テスト用の文</strong>
-        <p data-edit-id="test-message">更新テスト成功</p>
+    <section class="hm-section hm-services hm-services--guide" id="home-service">
+        <div class="hm-container hm-services-guide__inner">
+          <header class="hm-services-guide__head">
+            <p class="hm-kicker">WHAT WE CAN DO</p>
+            <h2><span>番谷石材店<span class="hm-services-guide__particle">で</span></span><span>できること</span></h2>
+          </header>
+          <div class="hm-services-guide__content">
+            <p class="hm-services-guide__lead"><span>お墓と石に関することを、</span><span>幅広くご相談いただけます。</span></p>
+            <div class="hm-services-guide__list" aria-label="番谷石材店で相談できること">
+              <p>お墓の建立</p>
+              <p>リフォーム・修理</p>
+              <p>クリーニング</p>
+              <p>追加彫り</p>
+              <p>墓じまい</p>
+              <p>墓地のご案内</p>
+              <p>表札・庭石</p>
+              <p>ペットのお墓</p>
+            </div>
+            <div class="hm-services-guide__note">
+              <p>内容がはっきり決まっていない段階でも大丈夫です。</p>
+              <p>今の状況を伺いながら、必要なことを一緒に整理していきます。</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="hm-feature hm-feature--build" id="home-build">
+        <div class="hm-feature__photo"><img src="assets/images/build-main-real.webp" alt="新しく建立した和型墓石の施工例" width="1600" height="1200" loading="lazy"></div>
+        <div class="hm-feature__copy">
+          <div class="hm-index hm-index--horizontal"><span>04</span><i></i></div>
+          <p class="hm-kicker">BUILD A GRAVE</p>
+          <h2>お墓を建てる</h2>
+          <p class="hm-lead">新しくお墓を建てる方へ。</p>
+          <p>お墓の形、石の種類、墓地の場所、ご予算など、お墓づくりで考えることはたくさんあります。</p>
+          <p>番谷石材店では、見た目だけでなく、基礎や納骨部分など、長く安心してお参りできるための内部構造も大切にしています。</p>
+          <a class="hm-btn hm-btn--outline" href="pages/build-grave/index.html">お墓を建てるページへ<span>→</span></a>
+          <div class="hm-feature__proof" aria-label="新しく建てるお墓の施工写真">
+            <figure><img src="assets/images/build-rebuild-real.webp" alt="建替え前の既存墓地と墓石" width="860" height="786" loading="lazy"><figcaption>建替え</figcaption></figure>
+            <figure><img src="assets/images/build-new-real.webp" alt="新しく建立したお墓の完成イメージ" width="960" height="842" loading="lazy"><figcaption>新規建立</figcaption></figure>
+          </div>
+        </div>
+    </section>
+
+    <section class="hm-feature hm-feature--reverse" id="home-repair">
+        <div class="hm-feature__photo"><img src="assets/images/service-repair-no-face.webp" alt="墓石の目地を丁寧に補修する職人の手元" width="1121" height="840" loading="lazy"></div>
+        <div class="hm-feature__copy">
+          <p class="hm-kicker">REPAIR &amp; ORGANIZE</p>
+          <h2>お墓を直す・整理する</h2>
+          <p class="hm-lead">今あるお墓を、これからも守りつづけるために。</p>
+          <p>年月が経ったお墓は、汚れや欠け、目地の劣化、金具の傷みなどが出ることがあります。</p>
+          <p>お墓のリフォームやクリーニング、追加彫り、墓じまい、お墓の移転など、今あるお墓をどうすればよいか迷っている段階でもご相談ください。</p>
+          <a class="hm-btn hm-btn--outline" href="pages/repair-close/index.html">お墓を直す・整理するページへ<span>→</span></a>
+          <div class="hm-feature__proof" aria-label="お墓を直す・整理する施工写真">
+            <figure><img src="assets/images/repair-before-real.webp" alt="補修前のお墓の状態" width="860" height="678" loading="lazy"><figcaption>修理前</figcaption></figure>
+            <figure><img src="assets/images/repair-after-real.webp" alt="補修後のお墓の状態" width="860" height="646" loading="lazy"><figcaption>修理後</figcaption></figure>
+            <figure><img src="assets/images/grave-close-after-real.webp" alt="墓じまい後の現場" width="800" height="600" loading="lazy"><figcaption>墓じまい後</figcaption></figure>
+          </div>
+        </div>
+    </section>
+
+    <section class="hm-section hm-works" id="home-works">
+        <div class="hm-container">
+          <div class="hm-works__head">
+            <div>
+              <p class="hm-kicker">WORKS</p>
+              <h2>施工事例</h2>
+              <p class="hm-lead">これまでにお手伝いしてきた仕事の一部をご紹介します。</p>
+            </div>
+            <div><p>新しくお墓を建てることから、今あるお墓の建替えやリフォーム、墓じまい、洗浄や追加彫りまで。番谷石材店がこれまでに携わってきた仕事をご覧いただけます。</p><a class="hm-btn hm-btn--outline" href="pages/works/index.html">施工事例ページへ<span>→</span></a></div>
+          </div>
+          <div class="hm-works__gallery">
+            <figure><img src="assets/images/works-new-real.webp" alt="新しく建立したお墓の施工事例" width="960" height="824" loading="lazy"><figcaption>新規建立</figcaption></figure>
+            <figure><img src="assets/images/build-main-real.webp" alt="建替え後に整えたお墓の施工事例" width="1600" height="1200" loading="lazy"><figcaption>リフォーム・建替え</figcaption></figure>
+            <figure><img src="assets/images/works-close-real.webp" alt="墓じまい後に整地した現場" width="800" height="600" loading="lazy"><figcaption>墓じまい・移動</figcaption></figure>
+            <figure><img src="assets/images/service-repair-no-face.webp" alt="墓石の目地や細部を手入れする作業" width="1121" height="840" loading="lazy"><figcaption>洗浄・追加彫り</figcaption></figure>
+          </div>
+        </div>
+    </section>
+
+    <section class="hm-section hm-knowledge" id="home-knowledge">
+      <div class="hm-container hm-knowledge__grid">
+        <div>
+          <p class="hm-kicker">KNOWLEDGE</p>
+          <h2>お墓の知識</h2>
+          <p class="hm-lead">お墓について、よく聞かれること。</p>
+          <p>お墓を建てる時期、石の選び方、文字の色、お墓掃除の注意点など、実際によく聞かれる内容をまとめています。</p>
+          <p>初めてお墓について考える方にも分かりやすいよう、基本的なことからご紹介しています。</p>
+          <a class="hm-btn hm-btn--outline" href="pages/knowledge/index.html">お墓の知識ページへ<span>→</span></a>
+        </div>
+        <div class="hm-knowledge__list" aria-label="お墓の知識に掲載する内容例">
+          <a href="pages/knowledge/index.html"><span class="hm-knowledge__mark" aria-hidden="true"></span><b>良いお墓とは、どんなお墓ですか。</b><i aria-hidden="true">→</i></a>
+          <a href="pages/knowledge/index.html"><span class="hm-knowledge__mark" aria-hidden="true"></span><b>お墓を建てる時期に決まりはありますか。</b><i aria-hidden="true">→</i></a>
+          <a href="pages/knowledge/index.html"><span class="hm-knowledge__mark" aria-hidden="true"></span><b>墓石に使う文字や色はどう選びますか。</b><i aria-hidden="true">→</i></a>
+          <a href="pages/knowledge/index.html"><span class="hm-knowledge__mark" aria-hidden="true"></span><b>お墓掃除で気をつけることはありますか。</b><i aria-hidden="true">→</i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="hm-contact" id="home-contact">
+      <img class="hm-contact__image" src="assets/images/service-overview-real.webp" alt="墓石の施工例" width="1000" height="750" loading="lazy">
+      <div class="hm-contact__veil"></div>
+      <div class="hm-container hm-contact__grid">
+        <div class="hm-contact__copy">
+          <p class="hm-kicker">CONTACT &amp; SHOP</p>
+          <h2>お問い合わせ・会社案内</h2>
+          <p class="hm-lead">お墓や石のこと、まずはお話をお聞かせください。</p>
+          <p>「どこに相談すればよいか分からない」という段階でも大丈夫です。</p>
+          <p>お墓を建てること、今あるお墓を直すこと、墓じまい、追加彫り、石に関するご相談など、まずは現在の状況をお聞かせください。</p>
+          <div class="hm-actions"><a class="hm-btn hm-btn--white" href="pages/contact/index.html">お問い合わせページへ<span>→</span></a><a class="hm-text-link hm-text-link--white" href="pages/about/index.html">会社案内を見る<span>→</span></a></div>
+        </div>
+        <aside class="hm-contact__panel"><small>お電話でのご相談</small><a href="tel:0768623845">0768-62-3845</a><dl><div><dt>受付時間</dt><dd>8:00〜18:00</dd></div><div><dt>定休日</dt><dd>年末年始・お盆</dd></div></dl></aside>
       </div>
     </section>
   </main>
-
-  <footer>Web担当者くん V1 動作確認専用 / 本番利用禁止</footer>
-  <script src="assets/js/app.js"></script>
+</div>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__brand">
+      <img class="site-footer__logo" src="assets/images/bantani_lockup_white.svg" alt="番谷石材店" width="500" height="140">
+      <p class="site-footer__meta">
+        <span>〒927-0433 石川県鳳珠郡能登町宇出津山分39-543</span>
+        <span>受付時間 8:00〜18:00 / 定休日 年末年始・お盆</span>
+      </p>
+    </div>
+    <nav class="site-footer__nav" aria-label="フッターメニュー">
+  <p class="site-footer__label">MENU</p>
+  <a href="index.html#home-top">トップ</a>
+  <a href="pages/about/index.html">番谷について</a>
+  <a href="pages/build-grave/index.html">お墓を建てる</a>
+  <a href="pages/repair-close/index.html">直す／整理</a>
+  <a href="pages/works/index.html">施工事例</a>
+  <a href="pages/knowledge/index.html">お墓の知識</a>
+  <a href="pages/contact/index.html">お問い合わせ</a>
+  <a class="site-footer__privacy-link" href="pages/privacy-policy/index.html">プライバシーポリシー</a>
+</nav>
+    <p class="site-footer__copy">© 2026 番谷石材店</p>
+  </div>
+</footer>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/home.js"></script>
+<script src="assets/js/analytics.js"></script>
 </body>
 </html>
